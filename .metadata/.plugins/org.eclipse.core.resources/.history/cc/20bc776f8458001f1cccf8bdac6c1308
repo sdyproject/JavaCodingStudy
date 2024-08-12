@@ -1,0 +1,27 @@
+package _240812;
+
+import java.util.Scanner;
+
+public class 문자열반복_2675 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		
+		int A = sc.nextInt();
+		String sum[] = new String[0];
+		for(int i =0; i<A; i++) {
+			int R = sc.nextInt();
+			String S = sc.next();
+			
+			for(int j =0; j<R; j++) {
+				sum+=S.charAt(j);
+			}
+		
+		}
+		
+		
+	}
+
+}
