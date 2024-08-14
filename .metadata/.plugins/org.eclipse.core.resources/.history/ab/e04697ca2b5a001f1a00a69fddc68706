@@ -1,0 +1,11 @@
+package _240814;
+
+public class 최댓값_2566 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] A  = new int[9][9];
+		System.out.println(A.length);
+	}
+
+}
