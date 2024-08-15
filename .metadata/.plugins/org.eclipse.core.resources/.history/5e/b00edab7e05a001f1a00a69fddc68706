@@ -1,0 +1,36 @@
+package _240815;
+
+import java.util.Scanner;
+
+public class 약수들의합_9506 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int A = sc.nextInt();
+		int B =0;
+		int C =0;
+		for(int i =1; i<=A; i++) {
+			C++;
+			int D[] = new int[C];
+			if(A%i ==0 && A!=i) {
+				for(int j =1; j<=A; j++) {
+					D[j] = j;
+					System.out.println(D[j]);
+				}
+				
+			}else {
+				System.out.println("is NOT perfect.");
+
+			}
+		}
+		/*
+		 * System.out.println(A+"="+);
+		 */
+		
+
+	}
+
+}

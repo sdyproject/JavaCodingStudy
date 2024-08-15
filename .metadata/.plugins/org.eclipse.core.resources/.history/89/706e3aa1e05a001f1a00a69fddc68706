@@ -1,0 +1,30 @@
+package _240815;
+
+import java.util.Scanner;
+
+public class 약수들의합_9506 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int A = sc.nextInt();
+		int B =0;	
+		for(int i =1; i<=A; i++) {
+			
+			if(A%i ==0 && A!=i) {
+			System.out.println(i);
+				
+			}else {
+				System.out.println("is NOT perfect.");
+
+			}
+		}
+		System.out.println(A+"="+i);
+
+		
+
+	}
+
+}
