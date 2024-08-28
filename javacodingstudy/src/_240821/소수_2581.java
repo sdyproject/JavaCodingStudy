@@ -1,5 +1,6 @@
 package _240821;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class 소수_2581 {
@@ -17,6 +18,8 @@ public class 소수_2581 {
         sc.close();
      // N+1 배열 설정 인덱스 0부터 N까지 사용
 		Prime_array = new boolean[N + 1]; 
+		System.out.println("length :"+Prime_array.length);
+		System.out.println("length2 : "+Math.sqrt(+Prime_array.length));
         getprime(); 
         
         int sum = 0; 
@@ -48,15 +51,15 @@ public class 소수_2581 {
     	//0,1은 소수가 아니기 때문에 true
     	Prime_array[0] = true; 
     	Prime_array[1] = true; 
-    	 // 2부터 prime.length의 제곱근까지 반복 
         for(int i = 2; i <= Math.sqrt(Prime_array.length); i++) {
             if(Prime_array[i] == false) {
                 for(int j = i * i; j < Prime_array.length; j += i) { 
                 	Prime_array[j] = true; 
+                	
                 }
             }
         }
-		
+		System.out.println(Arrays.toString(Prime_array));
 	
 	}
 
