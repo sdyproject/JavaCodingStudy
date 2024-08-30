@@ -1,0 +1,30 @@
+package _240829;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class 소트인사이드 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in); 
+		
+		String N =  sc.next();
+		String[] A = N.split("");
+		
+		for(int i = 0; i<A.length; i++) {
+			System.out.println(A[i]);
+		}
+		
+		System.out.println(Arrays.sort(A));
+		
+		/*
+		 * for(int i = 0; i<A.length; i++) { } Integer[] B =
+		 * Arrays.stream(A).boxed().toArray(Integer[]::new); Arrays.sort(B,
+		 * Collections.reverseOrder()); System.out.println(Arrays.toString(B));
+		 */
+		
+	}
+
+}

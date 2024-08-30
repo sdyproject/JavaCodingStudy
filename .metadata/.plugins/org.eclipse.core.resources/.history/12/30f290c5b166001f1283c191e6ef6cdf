@@ -1,0 +1,18 @@
+package _240829;
+
+import java.util.Scanner;
+
+public class 소트인사이드 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in); 
+		
+		int N =  sc.nextInt();
+		int A[];
+		for(int i = 0; i<N.length(); i++) {
+			
+		}
+	}
+
+}
