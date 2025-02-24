@@ -1,0 +1,22 @@
+package _250224;
+
+import java.util.Scanner;
+
+public class 더크게합치기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int answer = 0;
+		String ab = String.valueOf(a)+String.valueOf(b);
+		String ba = String.valueOf(b)+String.valueOf(a);
+		
+		answer = Integer.parseInt(ab)> Integer.parseInt(ba) ? Integer.parseInt(ab) : Integer.parseInt(ba);
+		
+		System.out.println(answer);
+	
+	}
+
+}

@@ -18,8 +18,8 @@ public class 대문자변환 {
 			if (!Character.isUpperCase(b)) {
 				answer += Character.toUpperCase(b);
 				
-			}else {
-				answer += b;
+			}else if(Character.isUpperCase(b)){
+				answer += Character.toLowerCase(b);
 			}
 		}
 		System.out.println(answer);

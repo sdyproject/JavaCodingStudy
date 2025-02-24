@@ -1,0 +1,18 @@
+package _250224;
+
+import java.util.Scanner;
+
+public class 더크게합치기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+	
+		String ab = String.valueOf(a)+String.valueOf(b);
+		System.out.println(ab);
+	
+	}
+
+}
