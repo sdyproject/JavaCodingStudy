@@ -1,0 +1,20 @@
+package _250316;
+
+import java.util.Scanner;
+
+public class 문자열섞기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+        
+        String str1 = sc.next();
+        String str2 = sc.next();
+		
+		
+		 int a[] =new int[str1.length()+str2.length()];
+	        System.out.println(a.length);
+	       
+	}
+
+}

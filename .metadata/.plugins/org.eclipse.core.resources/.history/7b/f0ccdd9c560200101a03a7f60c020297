@@ -1,0 +1,10 @@
+package _250316;
+
+public class 홀짝에_따라_다른값_반환하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
