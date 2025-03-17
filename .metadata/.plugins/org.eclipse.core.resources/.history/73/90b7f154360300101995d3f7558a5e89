@@ -1,0 +1,25 @@
+package _250317;
+
+public class 조건_문자열 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String ineq = "<";
+		String eq = "=";
+		int n = 20;
+		int m = 50;
+		
+		switch (ineq+eq=="") {
+		case value: {
+			
+			yield type;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + ineq+eq==);
+		}
+		
+		 int answer = ;
+		 System.out.println(answer);
+	}
+
+}

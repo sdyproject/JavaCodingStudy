@@ -1,0 +1,25 @@
+package _250317;
+
+public class 원소들의_곱과_합 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num_list[] = {3,4,5,2,1};
+		int num_list_len = num_list.length;
+		int sum = 0;
+		int multiply = 0;
+		for(int i = 0; i<num_list_len; i++) {
+			
+
+            multiply *= num_list[i];
+            sum += num_list[i];
+            
+            
+		}
+		System.out.println(sum);
+		System.out.println(multiply);
+		int answer = (multiply<sum) ? 1 : 0;
+		System.out.println(answer);
+	}
+
+}
