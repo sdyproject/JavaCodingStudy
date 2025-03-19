@@ -1,0 +1,40 @@
+package _250319;
+
+
+public class 코드_처리하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String code = "abc1abc1abc";
+		int mode =0;
+		String ref="";
+	
+		
+		/*code가 있고 mode는 0,1있으며 idx는 code.length-1만큼 0부터 1씩 증가 
+		 * 
+		 * */
+		String answer="";
+		/*
+		 * for(int i =0; i<code.length(); i++) { if(code.charAt(i)==1 && mode==0) {
+		 * mode++; }else if(code.charAt(i)==1 && mode==1) { mode--; } }
+		 */
+		
+		for(int idx =0; idx<code.length()-1; idx++) {
+				
+			char c = code.charAt(idx);
+			
+			if(c=='1') {
+				mode = (mode==0) ? 1 : 0;
+			}
+			if(mode==0 && idx!=1 && idx/2==0) {
+				answer+= code.charAt(idx);
+			}else if(mode==1 && idx!=1 && idx/2!=0){
+				answer+= code.charAt(idx);
+			}
+		
+		}
+		System.out.println(answer);
+		
+	}
+
+}

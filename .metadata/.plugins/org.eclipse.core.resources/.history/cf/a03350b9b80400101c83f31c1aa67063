@@ -1,0 +1,21 @@
+package _250319;
+
+public class 코드_처리하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String code = "abc1abc1abc";
+		int mode =0;
+		String ret;
+		/*code가 있고 mode는 0,1있으며 idx는 code.length-1만큼 0부터 1씩 증가 
+		 * 
+		 * */
+		
+		for(int idx =0; idx<code.length()-1; idx++) {
+			System.out.println(idx);
+		
+		}
+		
+	}
+
+}

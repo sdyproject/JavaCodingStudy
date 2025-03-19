@@ -1,0 +1,30 @@
+package _250318;
+
+import java.util.Arrays;
+import java.util.Iterator;
+
+public class 등차수열의_특정한_항만_더하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a =3;
+		int b =4;
+		boolean[] included = {true, false, false, true, true};
+		int answer =1;
+		/*
+		 * for(int i = 0; i<included.length; i++) { if(included[i]) { for(int j =a;
+		 * j<included.length; j+=b) { answer+=j; } } }
+		 */
+		
+		for(int i = 0; i<included.length; i++) {
+			if(included[i]==true) {
+				answer+=(a*b);
+			}
+		}
+		
+		
+		System.out.println(answer);
+
+	}
+
+}

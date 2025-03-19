@@ -1,0 +1,14 @@
+package _250319;
+
+public class 이어붙인_수 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] num_list = {3, 4, 5, 2, 1};
+		
+		for(int i=0; i<num_list.length; i++) {
+			System.out.println(num_list[i]);
+		}
+	}
+
+}
