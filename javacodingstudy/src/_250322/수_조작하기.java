@@ -21,14 +21,7 @@ public class 수_조작하기 {
 		}
 		System.out.println(n);
 		
-//		기능은 작동하는데 프로그래머스에선 오류
-//			for(int i=0; i<c.length(); i++) {
-//		n= (c.charAt(i)=='w') ? n+=1:
-//						 (c.charAt(i)=='s') ?  n-=1: 
-//					     (c.charAt(i)=='d') ? n+=10 : n-10;
-//
-//			}
-//			System.out.println(n);
+
 	}
 
 }
