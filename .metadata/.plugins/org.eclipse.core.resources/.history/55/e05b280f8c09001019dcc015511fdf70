@@ -1,0 +1,48 @@
+package _250325;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class 문자열_여러번_뒤집기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string = "rermgorpsam";
+	
+		int[][] queries = {{2, 3}, {0, 7}, {5, 9}, {6, 10}};
+		
+		String[] answer = new String[my_string.length()];
+		String c ="";
+//		ArrayList<Character> answer =  new ArrayList<>();
+//		char c;
+//		for(int i = 0; i<my_string.length(); i++) {
+//					answer.add(my_string.charAt(i));	
+//		}
+//		System.out.println(answer);
+//		
+//		
+//		System.out.println(answer.get(queries[0][0]));
+//		
+//		for(int i = 0; i<queries.length; i++) {
+//			
+//			c = answer.get(queries[i][0]);
+//			
+//			answer.add(queries[i][0], answer.get(queries[i][1]));
+//			answer.add(queries[i][1], c);
+//			
+//		}
+		for(int i = 0; i<my_string.length(); i++) {
+			 answer[i] = Character.toString(my_string.charAt(i)) ;
+			 
+		}
+		
+		for(int j =0; j<queries.length; j++) {
+			  c=  answer[queries[j][0]];
+			  answer[queries[j][0]] = answer[queries[j][1]];
+			  answer[queries[j][1]] =c;
+				
+		}
+		System.out.println(String.join("", answer));
+	}
+
+}

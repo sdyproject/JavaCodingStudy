@@ -1,0 +1,26 @@
+package _250326;
+
+public class 문자열_뒤집기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string ="Progra21Sremm3";
+		System.out.println(my_string.length()); 
+		char[] answer = my_string.toCharArray();
+		char c;
+		int s =6;
+		int e= 12;
+		
+		
+		for(int i=e; i>=s; i++) {
+		     	c =answer[s];
+		     	answer[s] = answer[e];
+		     	answer[e] =c;
+		     	s++;
+		     	e--;
+		     	
+		}
+		System.out.println(answer);
+	}
+
+}

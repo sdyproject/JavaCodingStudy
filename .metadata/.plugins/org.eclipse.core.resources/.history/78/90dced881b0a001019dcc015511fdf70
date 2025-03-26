@@ -1,0 +1,10 @@
+package _250326;
+
+public class 문자열의_뒤의_n글자 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
