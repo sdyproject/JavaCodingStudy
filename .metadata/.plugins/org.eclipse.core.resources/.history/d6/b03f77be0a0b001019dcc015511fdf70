@@ -1,0 +1,10 @@
+package _250327;
+
+public class 문자_개수_세기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

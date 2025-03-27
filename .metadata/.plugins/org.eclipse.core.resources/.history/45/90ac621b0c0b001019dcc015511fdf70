@@ -1,0 +1,15 @@
+package _250327;
+
+public class 문자_개수_세기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string ="Programmers";
+		
+		for(int i = 0; i<my_string.length(); i++) {
+		 char a =	 my_string.charAt(i);
+		 System.out.println(a);
+		}
+	}
+
+}

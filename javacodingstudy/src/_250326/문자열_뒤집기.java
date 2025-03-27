@@ -19,6 +19,7 @@ public class 문자열_뒤집기 {
 		     	e--;
 		     	
 		}
+		
 		System.out.println(answer);
 	}
 

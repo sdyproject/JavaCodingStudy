@@ -1,0 +1,17 @@
+package _250327;
+
+public class qr_code {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int q = 3;
+		int r = 1;
+		String code ="qjnwezgrpirldywt";
+		
+		char[] arr  = code.toCharArray();
+		for(int num : arr) {
+			System.out.println(num);
+		}
+	}
+
+}

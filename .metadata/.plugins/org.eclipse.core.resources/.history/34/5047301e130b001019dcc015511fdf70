@@ -1,0 +1,26 @@
+package _250327;
+
+public class 글자_지우기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string ="apporoograpemmemprs";
+		int[] indices = {1, 16, 6, 15, 0, 10, 11, 3};
+		char[] arr = my_string.toCharArray();
+		String answer = "";
+//		for(char num :  arr) {
+//			 System.out.println(num);
+//		}
+		
+		for(int i=0; i<my_string.length(); i++) {
+					for(int j=0; j<indices.length; j++) {
+							if(indices[j]!= arr[indices[j]]) {
+								answer += arr[indices[j]];
+							}
+					}
+					
+		}
+		System.out.println(answer);
+	}
+
+}
