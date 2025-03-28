@@ -11,7 +11,6 @@ public class 카운트다운 {
 		int[] answer = new int[start_num-end_num+1];
 		int start =0;
 		for(int i = start_num; i>= end_num; i--) {
-			System.out.println(i);
 			answer[start] = i;
 			start++;
 		}

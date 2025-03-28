@@ -1,0 +1,15 @@
+package _250328;
+
+public class _2의_영역 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = {1, 2, 1, 4, 5, 2, 9};
+	String arrs = "";
+		for(int num : arr) {
+			arrs +=num;
+		}
+		System.out.println(arrs);
+	}
+
+}
