@@ -1,0 +1,15 @@
+package _250329;
+
+public class _5명씩 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] names = {"nami", "ahri", "jayce", "garen", "ivern", "vex", "jinx"};
+		int  size =0;
+		if(names.length%5 ==0) {
+		size++;
+	}
+	
+	}
+
+}

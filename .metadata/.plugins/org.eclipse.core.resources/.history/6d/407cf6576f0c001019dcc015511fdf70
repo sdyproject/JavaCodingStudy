@@ -1,0 +1,10 @@
+package _250329;
+
+public class 홀수_vs_짝수 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
