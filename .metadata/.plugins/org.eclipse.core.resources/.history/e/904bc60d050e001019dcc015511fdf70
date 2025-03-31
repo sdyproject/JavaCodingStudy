@@ -1,0 +1,19 @@
+package _250331;
+
+public class 글자_지우기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string = "apporoograpemmemprs";
+		int[] indices = {1, 16, 6, 15, 0, 10, 11, 3};
+		String answer ="";
+		
+		char[] arr =my_string.toCharArray();
+		
+		for(int i =0; i<my_string.length(); i++) {
+			System.out.println(arr[i]);
+//			System.out.println(indices[i]);
+		}
+	}
+
+}

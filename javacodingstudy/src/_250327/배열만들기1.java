@@ -9,15 +9,29 @@ public class 배열만들기1 {
 		// TODO Auto-generated method stub
 		int n =10;
 		int k=3;
-		
-		ArrayList<Integer> answer=  new ArrayList<>();
+		int size =n/k;
+		int index = 0;
+	int[] answer = new int[size];
+
 		for(int i =1; i<=n; i++) {
 			if(i%k == 0) {
-				answer.add(i);
+				answer[index++] =i;
 			}
 		}
-		System.out.println(answer);
+		System.out.println(Arrays.toString(answer));
 		
+		
+//배열리스트 이용한 풀이 	
+//		ArrayList<Integer> answer=  new ArrayList<>();
+		
+
+//		for(int i =1; i<=n; i++) {
+//			if(i%k == 0) {
+//				answer.add(i);
+//			}
+//		}
+//		System.out.println(answer);
+//	
 		
 	}
 

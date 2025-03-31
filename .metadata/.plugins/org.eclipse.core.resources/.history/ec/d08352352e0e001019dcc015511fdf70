@@ -1,0 +1,22 @@
+package _250331;
+
+import java.util.Arrays;
+
+public class 조건에_맞게_수열_변환하기_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = {1, 2, 3, 100, 99, 98};
+		int answer=0;
+		
+
+		int[] arr2 =  new int[arr.length];
+		for(int i =0; i<arr.length+1; i++) {
+			arr2[i] = (arr[i]<50 && arr[i]%2 !=0) ? arr[i]*2 
+					: (arr[i]>=50 && arr[i]%2 ==0) ? arr[i]/2 
+					:  arr[i];
+			System.out.println(Arrays.toString(arr2));
+	}
+	}
+
+}

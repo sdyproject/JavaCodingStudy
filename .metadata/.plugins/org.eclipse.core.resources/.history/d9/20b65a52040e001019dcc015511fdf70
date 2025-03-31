@@ -1,0 +1,10 @@
+package _250331;
+
+public class 글자_지우기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
