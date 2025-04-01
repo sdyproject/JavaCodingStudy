@@ -1,0 +1,24 @@
+package _250401;
+
+public class A_강조하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		String myString = "abstract algebra";
+		String myString = "PrOgRaMmErS";
+		char[] arr  = myString.toCharArray(); 
+		String answer ="";
+		for(int i =0; i<myString.length(); i++) {
+			
+			if(arr[i]=='a') {
+				
+				answer+= Character.toUpperCase(arr[i]);
+			}else {
+				answer+=  Character.toLowerCase(arr[i]);
+			}
+							
+		}
+		System.out.println(answer);
+	}
+
+}

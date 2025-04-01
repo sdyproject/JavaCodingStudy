@@ -6,9 +6,8 @@ public class 길이에_따른_연산 {
 		// TODO Auto-generated method stub
 		int[] num_list = {3, 4, 5, 2, 5, 4, 6, 7, 3, 7, 2, 2, 1};
 //		int[] num_list = {2, 3, 4, 5};
-		int sum = 0;
 		int answer =0;
-		
+		int sum =0;
 		
 		
 		if(num_list.length>11) {
@@ -16,17 +15,17 @@ public class 길이에_따른_연산 {
 				sum+=num;
 				
 			}
-			answer = sum;
+			answer =sum;
 		}else {
 			answer+=1;
-			for(int num2 : num_list) {
-					answer*= num2;
+			
+			for(int num : num_list) {
+					answer*= num;	
+				
 				
 				
 			}
 		}
-		
-		
 		
 		 System.out.println(answer);
 	}

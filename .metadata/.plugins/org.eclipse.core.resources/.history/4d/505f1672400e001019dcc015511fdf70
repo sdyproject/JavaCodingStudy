@@ -1,0 +1,27 @@
+package _250401;
+
+public class 원하는_문자열_찾기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		String myString ="AbCdEfG";
+//		String pat ="aBc";
+		int  answer =0;
+		String myString ="aaAA";
+		String pat ="aaaaa";
+		
+	
+//		System.out.println(pat.toLowerCase());
+//		System.out.println(myString.toLowerCase());
+//		
+//System.out.println(myString.toLowerCase().contains(pat.toLowerCase()));
+		
+		if(myString.toLowerCase().contains(pat.toLowerCase()) ==true) {
+			answer+=1;
+		}else {
+			answer=0;
+		}
+		System.out.println(answer);
+	}
+
+}

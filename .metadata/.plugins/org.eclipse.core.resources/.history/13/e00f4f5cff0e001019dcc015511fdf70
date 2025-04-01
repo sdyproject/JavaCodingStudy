@@ -1,0 +1,10 @@
+package _250401;
+
+public class 특정문자열로_끝나는_가장긴_부분_문자열찾기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
