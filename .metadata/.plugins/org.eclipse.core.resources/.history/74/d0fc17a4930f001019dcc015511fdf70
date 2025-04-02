@@ -1,0 +1,13 @@
+package _250402;
+
+public class 공백으로_구분하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string ="i love you";
+		String.join("", my_string);
+		
+		System.out.println(String.join(" ", my_string));
+	}
+
+}

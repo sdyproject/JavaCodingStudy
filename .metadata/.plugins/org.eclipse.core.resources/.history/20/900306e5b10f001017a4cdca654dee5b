@@ -1,0 +1,12 @@
+package _250402;
+
+public class _rny_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String rny_string= "programmers";
+		rny_string.replace("M", "rn");
+		System.out.println(rny_string);
+	}
+
+}

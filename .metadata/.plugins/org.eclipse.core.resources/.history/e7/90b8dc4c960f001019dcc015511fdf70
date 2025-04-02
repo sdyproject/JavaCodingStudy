@@ -1,0 +1,17 @@
+package _250402;
+
+import java.util.Arrays;
+
+public class 공백으로_구분하기2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string = " i    love  you";
+	
+
+		String[] answer = my_string.split("\\s+");
+
+		System.out.println(Arrays.toString(answer));
+	}
+
+}

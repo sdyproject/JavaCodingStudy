@@ -1,0 +1,11 @@
+package _250402;
+
+public class 문자열_잘라서_정렬하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String myString ="axbxcxdx";
+		System.out.println(myString.split("x"));
+	}
+
+}

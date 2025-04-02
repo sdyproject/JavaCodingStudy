@@ -1,0 +1,22 @@
+package _250402;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class 세개의_구분자 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String myStr ="baconlettucetomato";
+//		String myStr ="abcd";
+//		String myStr ="cabab";
+		ArrayList<String> answer = new ArrayList<>();
+		
+		String[] arr = {"a","b","c"};
+		
+		 String a=myStr.substring(0, 5);
+		 System.out.println(a);
+//		System.out.println(Arrays.toString(a));
+}
+
+}

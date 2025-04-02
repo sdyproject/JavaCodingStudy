@@ -1,0 +1,14 @@
+package _250402;
+
+import java.util.Arrays;
+
+public class 간단한_식_계산하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String  binomial = "43 + 12";
+		String[] a=binomial.split(" ");
+		System.out.println(Arrays.toString(a));
+	}
+
+}
