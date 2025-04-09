@@ -1,0 +1,21 @@
+package _250409;
+
+public class 문자열_섞기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1 ="aaaaa";
+		String str2 ="bbbbb";
+		String answer ="";
+		
+		 for(int i =0; i<str1.length(); i++) {
+			 answer += String.valueOf(str1.charAt(0));
+		 }
+		 
+		 for(int j=1; j<str2.length();  j+=2) {
+			 answer +=  String.valueOf(str2.charAt(0));
+		 }
+		 System.out.println(answer);
+	}
+
+}
