@@ -1,0 +1,31 @@
+	package _250410;
+
+public class 수열과_구간_쿼리_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = {0, 1, 2, 4, 3};
+		int[][] queries = {{0, 4, 2},{0, 3, 2},{0, 2, 2}};
+		int[] answer = new int[queries.length];
+		
+		
+		for(int j =0; j<queries.length; j++) {
+			for(int i =0; i<=queries[j][1]; i++) {
+//				System.out.println(arr[i]);
+				if(arr[i]<queries[j][2]) {
+					answer[j] = arr[i];
+				}else {
+					answer[j] = -1;
+				}
+			}
+		}
+		
+//		for(int i=0; i<=queries.length; i++) {
+//			for(int j=arr[queries[i][0]]; j<arr[queries[i][1]]; j++) {
+//				System.out.println(arr[j]);
+//			}
+//		}
+	}
+
+}
+
