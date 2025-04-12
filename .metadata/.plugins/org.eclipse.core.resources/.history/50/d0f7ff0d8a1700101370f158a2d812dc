@@ -1,0 +1,20 @@
+package _250412;
+
+public class 부분_문자열_이어_붙여_문자열_만들기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] my_strings ={"progressive", "hamburger", "hammer", "ahocorasick"};
+		int[][] parts = {{0,4},{1,2},{3,5},{7,7}};
+		 String answer = "";
+		 System.out.println( my_strings[parts[0][0]].charAt(0));
+		for(int i=0; i<parts.length; i++) {
+		int s= parts[i][0];
+		int e= parts[i][1];
+		
+		answer+=my_strings[s].charAt(s);
+		}
+		System.out.println(answer);
+	}
+
+}

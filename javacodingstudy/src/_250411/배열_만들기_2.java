@@ -9,20 +9,27 @@ public class 배열_만들기_2 {
 		int l =5; int r = 555;
 
 	ArrayList<Integer> answer = new ArrayList<>();
+//	for(int i = l; i<=r; i++) {
+//		String s= Integer.toString(i);
+//		boolean b= true;
+//		for(char c  : s.toCharArray()) {
+//			 if (c != '0' && c != '5') {
+//                 b = false;
+//                 break;
+//             }
+//		}
+//		
+//		if(b) {
+//			answer.add(i);
+//		}
+//	}
+	//정규식
 	for(int i = l; i<=r; i++) {
-		String s= Integer.toString(i);
-		boolean b= true;
-		for(char c  : s.toCharArray()) {
-			 if (c != '0' && c != '5') {
-                 b = false;
-                 break;
-             }
+		if (String.valueOf(i).matches("[05]+")) {
+		    answer.add(i);
 		}
-		
-		if(b) {
-			answer.add(i);
-		}
-	}
+}
+	
 	
 	
 	System.out.println(answer);
