@@ -1,0 +1,15 @@
+package _250413;
+
+public class 접미사인지_확인하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string="banana" ;  
+		String is_suffix="ana";
+		//"banana"의 모든 접미사는 "banana", "anana", "nana", "ana", "na", "a"입니다.
+		for(int  i = 0; i<my_string.length(); i++) {
+			System.out.println(my_string.substring(i));
+		}
+	}
+
+}
