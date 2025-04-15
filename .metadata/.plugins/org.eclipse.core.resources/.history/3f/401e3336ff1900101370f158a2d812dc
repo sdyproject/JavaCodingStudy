@@ -1,0 +1,28 @@
+package _250415;
+
+public class 문자열_뒤집기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string="Progra21Sremm3";
+		int s=6; int e=12;
+		
+		StringBuilder answer = new StringBuilder(my_string);
+
+		
+//		StringBuilder answer = new StringBuilder(my_string);
+//		
+//		StringBuilder sb = new StringBuilder(answer.substring(s,e));
+//		System.out.println(sb);
+//		sb.reverse();
+//		System.out.println(sb);
+		
+		for(int i = 0; i<my_string.length(); i++) {
+			StringBuilder sb = new StringBuilder(answer.substring(s,e));
+			sb.reverse();
+			answer.replace(s, e, sb.toString());
+		}
+		System.out.println(answer);
+	}
+
+}

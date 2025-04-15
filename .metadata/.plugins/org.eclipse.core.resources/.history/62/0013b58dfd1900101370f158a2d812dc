@@ -14,7 +14,7 @@ public class 접두사인지_확인하기 {
 	String ba ="";
 		for(int  i = 0; i<my_string.length(); i++) {
 			 ba +=my_string.charAt(i);
-//			 System.out.println(ba);
+			 System.out.println(ba);
 			answer += (is_prefix.equals(ba)) ? 1:0; 
 			
 		}
