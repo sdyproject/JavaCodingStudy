@@ -8,12 +8,13 @@ public class 세로_읽기 {
 		// TODO Auto-generated method stub
 		String answer ="";
 		
-	   String my_string = "programmers";
-			   int m=1; int c=1;
+	   String my_string = "ihrhbakrfpndopljhygc";
+			   int m=4; int c=2;
 			  ArrayList<String> arr =  new ArrayList<>();
 
 			   for(int i =0; i<my_string.length(); i+=m) {
 				   arr.add(my_string.substring(i, i+m));
+				   System.out.println(arr);
 			   }
 			   
 			   for(int j =0; j<arr.size(); j++) {
