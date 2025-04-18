@@ -1,0 +1,30 @@
+package _250418;
+
+import java.util.ArrayList;
+
+public class _5명씩 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] names = {"nami", "ahri", "jayce", "garen", "ivern", "vex", "jinx"};
+		
+		 int index =0;
+		String[] answer =new String[index++];
+		
+//		 ArrayList<String> answer = new ArrayList<>();
+		
+//		for(int i =0;i<names.length; i++) {
+//			if(i%5==0) {
+//				answer.add(names[i]);
+//			}
+//		}
+		
+		for(int i =0;i<names.length; i++) {
+			if(i%5==0) {
+				answer[i]=names[i];
+			}
+		}
+		System.out.println(answer);
+	}
+
+}

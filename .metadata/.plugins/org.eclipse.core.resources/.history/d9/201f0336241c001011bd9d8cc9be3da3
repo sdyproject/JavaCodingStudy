@@ -1,0 +1,29 @@
+package _250418;
+
+import java.util.ArrayList;
+
+public class 왼쪽_오른쪽 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] str_list = {"u", "u", "l", "r"};
+//		String[] answer = {};
+		int index =0;
+		ArrayList<String> answer = new ArrayList<>();
+		for(int  i=0; i<str_list.length; i++) {
+			if(str_list[i]=="l") {
+				for(int j =0; j<i; j++) {
+					answer.add(str_list[j]);
+					break;
+				}
+			}else if(str_list[i] == "r") {
+				for(int k =i; k<str_list.length; k++) {
+					answer.add(str_list[k]);
+				
+				}
+			}
+		}
+		System.out.println(answer);
+	}
+
+}
