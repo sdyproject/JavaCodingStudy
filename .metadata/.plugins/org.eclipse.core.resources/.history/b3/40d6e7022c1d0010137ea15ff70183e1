@@ -1,0 +1,16 @@
+package _250419;
+
+public class _0_떼기 {
+
+	public static void main(String[] args) {
+		String n_str ="0010";
+        String answer = "";
+        
+        answer=n_str.trim();
+        System.out.println(answer);
+//        for(int i = 0; i<n_str.length(); i++) {
+//        	
+//        }
+	}
+
+}

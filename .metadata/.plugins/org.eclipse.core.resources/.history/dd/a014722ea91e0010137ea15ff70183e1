@@ -1,0 +1,15 @@
+package _250421;
+
+public class 배열_뒤집기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] num_list = {1,2,3,4,5};
+		int[] answer = new int[num_list.length];
+		
+		StringBuilder sb = new StringBuilder(num_list.toString());
+		
+		System.out.println(sb);
+	}
+
+}

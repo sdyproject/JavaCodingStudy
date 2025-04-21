@@ -1,0 +1,18 @@
+package _250419;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class _0_떼기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String n_str ="0010";
+		
+		String answer ="";
+		
+		int n = Integer.parseInt(n_str);
+		System.out.println(n);
+	}
+
+}

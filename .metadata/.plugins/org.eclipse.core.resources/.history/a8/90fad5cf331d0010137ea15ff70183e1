@@ -1,0 +1,13 @@
+package _250419;
+
+public class _0_떼기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String n_str ="0010";
+		
+		String[] answer = n_str.split("0");
+		System.out.println(answer);
+	}
+
+}
