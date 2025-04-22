@@ -1,0 +1,17 @@
+package _250423;
+
+import java.util.Arrays;
+
+public class 배열의_원소_삭제하기 {
+
+	public static void main(String[] args) {
+		int[] arr = {293, 1000, 395, 678, 94};
+		int[] delete_list = {94, 777, 104, 1000, 1, 12};
+		
+		 Arrays.sort(arr);
+		 System.out.println(Arrays.toString(arr));
+		 Arrays.sort(delete_list);
+		 System.out.println(Arrays.toString(delete_list));
+	}
+
+}

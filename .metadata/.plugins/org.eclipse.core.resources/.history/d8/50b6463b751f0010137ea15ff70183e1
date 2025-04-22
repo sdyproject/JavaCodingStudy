@@ -1,0 +1,27 @@
+package _250423;
+
+import java.util.Arrays;
+
+public class 최댓값_만들기_2 {
+
+	public static void main(String[] args) {
+		int[] numbers = {1, 2, -3, 4, -5};
+		
+		int answer = numbers[numbers.length-1]*numbers[numbers.length-3];
+		System.out.println(answer);
+		
+//		for(int i =0; i<numbers.length; i++) {
+//			if(numbers[i]<0) {
+//				numbers[i] = Math.abs(numbers[i]);
+//			}
+//		}
+//		Arrays.sort(numbers);
+//		
+//		
+//		int answer = numbers[numbers.length-1]*numbers[numbers.length-2];
+//
+//		System.out.println(answer);
+//		System.out.println( Arrays.toString(numbers));
+	}
+
+}
