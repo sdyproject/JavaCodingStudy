@@ -1,0 +1,25 @@
+package _250424;
+
+public class 문자열이_몇_번_등장하는지_세기 {
+
+	public static void main(String[] args) {
+		String myString="banana"; String pat="ana";
+        int answer = 0;
+        String str = "";
+        
+//        String b= myString.substring(0,5);
+//        System.out.println(b);
+		for(int i=myString.length()-1; i>=0; i--) {
+			if(myString.endsWith(pat)) {
+				myString=myString.substring(0,i);
+				answer++;
+			}else {
+				myString=myString.substring(0,i);
+			}
+			
+			
+		}
+		System.out.println(myString);
+	}
+
+}

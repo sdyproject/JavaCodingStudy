@@ -1,0 +1,33 @@
+package _250424;
+
+import java.util.Arrays;
+
+public class 문자열_잘라서_정렬하기 {
+	public static void main(String[] args) {
+//	String myString = "axbxcxdx";
+		String myString = "xabcxdefx";
+		
+		 String[] arr = myString.split("x");
+		 String[] answer = new String[arr.length];
+		 for(int i =0; i<answer.length; i++) {
+			if(!arr[i].isEmpty())
+				answer[i] = arr[i];
+		 }
+		
+		 System.out.println(Arrays.toString(answer));
+		 
+		 System.out.println(answer.length);
+		 
+		 
+		 //기존 내가 푼 풀이 
+		/*문제점 
+		 *myString으로 주어진 문자열이 "xabcxdefx"이라면 빈 공백이 배열에 포함될 수 있다.(문제 조건에 공백은 포함되면 안된다는 조건 존재)
+		 * 결과값이 [, abc, def] 나오게 된다.
+		 * */
+//		 String[] answer = myString.split("x");
+//			Arrays.sort(answer);
+//		System.out.println(Arrays.toString(answer)); 
+//		System.out.println(answer.length);
+	}
+	
+}

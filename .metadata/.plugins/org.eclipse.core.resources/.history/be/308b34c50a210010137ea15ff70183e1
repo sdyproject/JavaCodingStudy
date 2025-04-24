@@ -1,0 +1,33 @@
+package _250424;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class 세_개의_구분자 {
+
+	public static void main(String[] args) {
+//		String myStr= "baconlettucetomato";
+//		String myStr= "abcd";
+		String myStr= "cabab";
+	
+		 String[] arr=myStr.split("[a-c]");
+		
+		 System.out.println(Arrays.toString(arr));
+		 System.out.println(arr.length);
+		 ArrayList<String> slist = new ArrayList<>();
+		 
+		 for(String str :  arr) {
+			 if(!str.isEmpty()) {
+				 slist.add(myStr);
+			 }else if(arr.length==0) {
+//				 slist.toString("EMPTY");
+				 
+				 slist.add("EMPTY");
+			 }
+			 
+			
+		 }
+		 System.out.println(slist);
+	}
+
+}

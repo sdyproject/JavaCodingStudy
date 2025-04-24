@@ -1,0 +1,17 @@
+package _250424;
+
+import java.util.Arrays;
+
+public class 세_개의_구분자 {
+
+	public static void main(String[] args) {
+		String myStr= "baconlettucetomato";
+//		String myStr= "abcd";
+//		String myStr= "cabab";
+	
+		 String[] arr=myStr.split("[a-c]");
+		
+		 System.out.println(Arrays.toString(arr));
+	}
+
+}

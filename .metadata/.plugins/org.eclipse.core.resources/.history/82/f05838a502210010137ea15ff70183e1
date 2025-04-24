@@ -1,0 +1,25 @@
+package _250424;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class 문자열_잘라서_정렬하기 {
+	public static void main(String[] args) {
+//	String myString = "axbxcxdx";
+		String myString = "dxccxbbbxaaaa";
+		
+		 String[] arr = myString.split("x");
+//		 String[] answer = new String[arr.length];
+		 ArrayList<String> answer  = new ArrayList<>();
+		 for(int i =0; i<arr.length); i++) {
+			if(!arr[i].isEmpty())
+				answer.add(arr[i]);
+		 }
+//		 Arrays.sort(answer);
+		 System.out.println(answer);
+//			Arrays.sort(answer);
+//		System.out.println(Arrays.toString(answer)); //[aaaa, bbb, cc, d]
+
+	}
+	
+}
