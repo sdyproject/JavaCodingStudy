@@ -1,0 +1,17 @@
+package _250427;
+
+import java.util.Arrays;
+
+public class 문자열_묶기 {
+
+	public static void main(String[] args) {
+		String[] strArr = {"a","bc","d","efg","hi"};
+		
+		String a = Arrays.toString(strArr);
+		System.out.println(a);
+		
+		String[] aa= a.split(",");
+		System.out.println(Arrays.toString(aa));
+	}
+
+}
