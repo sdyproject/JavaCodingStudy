@@ -1,0 +1,21 @@
+package _250426;
+
+public class 문자열_묶기 {
+
+	public static void main(String[] args) {
+		String[] strArr = {"a","bc","d","efg","hi"};
+		
+		int min =0;
+		int answer = 0;
+
+		
+		for(int i =0; i<strArr.length; i++) {
+			if(min<strArr[i].length()) {
+				min=strArr[i].length();
+			}
+	
+			System.out.println(strArr[i].length());
+	}
+		System.out.println(min);
+	}
+}
