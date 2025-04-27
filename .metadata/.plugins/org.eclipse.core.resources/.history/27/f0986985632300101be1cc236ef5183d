@@ -1,0 +1,10 @@
+package _250427;
+
+public class 부분_문자열인지_확인하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

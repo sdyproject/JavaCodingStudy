@@ -1,0 +1,11 @@
+package _250427;
+
+public class 뒤에서_5등까지 {
+
+	public static void main(String[] args) {
+		int[] num_list = {12, 4, 15, 46, 38, 1, 14};
+		
+		num_list.s
+	}
+
+}

@@ -1,0 +1,13 @@
+package _250427;
+
+public class _l로_만들기 {
+
+	public static void main(String[] args) {
+		String myString ="abcdevwxyz";
+//		String myString ="jjnnllkkmm"; 
+		String answer =myString.replaceAll("^[l-z]","l");
+		System.out.println(answer);
+		
+	}
+
+}
