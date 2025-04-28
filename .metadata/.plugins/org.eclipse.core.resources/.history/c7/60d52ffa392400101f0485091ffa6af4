@@ -1,0 +1,14 @@
+package _250428;
+
+public class 옹알이_1 {
+
+	public static void main(String[] args) {
+		//조카는 아직 "aya", "ye", "woo", "ma" 네 가지 발음을 최대 한 번씩 사용해 조합한(이어 붙인) 발음밖에 하지 못합니다. 
+		String[] babbling = {"aya", "yee", "u", "maa", "wyeoo"}; //1
+//		String[] babbling = {"ayaye", "uuuma", "ye", "yemawoo", "ayaa"}; //3
+		
+		
+
+	}
+
+}
