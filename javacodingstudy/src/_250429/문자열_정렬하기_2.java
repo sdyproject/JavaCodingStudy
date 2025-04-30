@@ -15,7 +15,7 @@ public class 문자열_정렬하기_2 {
 		
 		char[] ch = my_String.toLowerCase().toCharArray();
 		
-		Arrays.sort(ch);
+		Arrays.sort(ch);	
 		
 		String answer=String.valueOf(ch);
 		

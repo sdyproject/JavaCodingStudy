@@ -1,0 +1,16 @@
+package _250430;
+
+import java.util.ArrayList;
+
+public class _x_사이의_개수 {
+
+	public static void main(String[] args) {
+		String myString = "oxooxoxxox"; // [1, 2, 1, 0, 1, 0]
+//		String myString = "xabcxdefxghi";  //[0, 3, 3, 3]
+
+		   ArrayList<Integer> answer= new ArrayList<>();
+		   answer.add(myString.split("x").length);
+		   System.out.println(answer);
+	}
+
+}

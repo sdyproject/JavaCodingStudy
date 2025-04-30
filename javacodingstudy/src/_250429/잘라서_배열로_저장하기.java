@@ -12,7 +12,7 @@ public class 잘라서_배열로_저장하기 {
 
 //		my_str.split(, n)
 //		System.out.println(my_str.length());
-		for(int i = 0; i<my_str.length(); i+=n) {
+		for(int i = 0; i<my_str.length(); ) {
 			System.out.println(i);
 			System.out.println(my_str.substring(i,n+i));
 		}

@@ -1,0 +1,16 @@
+package _250430;
+
+import java.util.Arrays;
+
+public class 배열_회전시키기 {
+
+	public static void main(String[] args) {
+		int[] numbers = {1,2,3}; String direction ="right";
+//		int[] numbers = {4, 455, 6, 4, -1, 45, 6}; String direction ="left";
+		
+		int[] answer = new int[numbers.length];
+		StringBuilder sb = new StringBuilder(Arrays.toString(numbers));
+		System.out.println(sb);
+	}
+
+}
