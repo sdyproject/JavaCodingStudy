@@ -1,0 +1,36 @@
+package _250406;
+
+import java.util.ArrayList;
+
+public class 배열_만들기6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		int[] arr = {0, 1, 1, 1, 0};
+//		int[] arr = {0, 1, 0, 1, 0};
+		int[] arr = {0, 1, 1, 0};
+		ArrayList<Integer> answer = new ArrayList<>();
+		
+		for(int i =0; i<arr.length; i++) {
+			if(answer.size()==0) {
+				answer.add(i, arr[i]);
+			}else if(answer.size()-1 ==arr[i]) {
+				answer.remove(answer.size()-1);
+			}else if(answer.size()-1 !=arr[i]) {
+				answer.add(arr[i]);
+			}
+		}
+		if(answer.size() ==0) {
+			answer.add(-1);
+			System.out.println(answer);
+		}else {
+			System.out.println(answer);
+
+		}
+	
+		
+	}
+
+	
+	
+}

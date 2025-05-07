@@ -1,0 +1,15 @@
+package 백준.반복문;
+
+public class 합 {
+
+	public static void main(String[] args) {
+		int  n= 3;
+		int answer =0;
+		while(n<=1) {
+			answer+=n;
+			n--;
+		}
+		System.out.println(answer);
+	}
+
+}

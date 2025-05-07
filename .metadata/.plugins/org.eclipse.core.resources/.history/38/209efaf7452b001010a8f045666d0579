@@ -1,0 +1,24 @@
+package _250507;
+
+public class 크기가_작은_부분문자열 {
+
+	public static void main(String[] args) {
+		String t = "3141592";
+		String p = "271";
+		
+//		String t = "500220839878";
+//		String p = "7";
+
+//		String t = "10203";
+//		String p = "15";
+		
+        int answer = 0;
+        for(int i =0; i<t.length(); i++) {
+        	int limit = p.length()+i;
+        	System.out.println(i);
+        	 String a = t.substring(i, p.length()+i);
+        	 System.out.println(a);
+        }
+	}
+
+}

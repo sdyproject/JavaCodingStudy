@@ -1,0 +1,19 @@
+package _250427;
+
+public class 꼬리_문자열 {
+
+	public static void main(String[] args) {
+//		String[] str_list = {"abc", "def", "ghi"};
+//		String ex="ef";
+		String[] str_list ={"abc", "bbc", "cbc"};
+		String ex="c";
+		String answer ="";
+		for(String str : str_list) {
+			if(!str.contains(ex)) {
+				answer+=str;
+			}
+		}
+		System.out.println(answer);
+	}
+
+}
