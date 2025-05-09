@@ -1,0 +1,17 @@
+package _250509;
+
+import java.util.Arrays;
+
+public class 정수_내림차순으로_배치하기 {
+
+	public static void main(String[] args) {
+		long a =118372;
+		String a_len =  String.valueOf(a);
+		int[] arr = new int[a_len.length()];
+		for(int  i =0; i<a_len.length(); i++) {
+			arr[i] +=a_len.charAt(i); 
+		}
+		System.out.println(Arrays.toString(arr));
+	}
+
+}
