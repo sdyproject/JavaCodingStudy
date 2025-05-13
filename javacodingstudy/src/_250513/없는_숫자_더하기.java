@@ -1,0 +1,38 @@
+package _250513;
+
+import java.util.Arrays;
+
+public class 없는_숫자_더하기 {
+
+	public static void main(String[] args) {
+//		int[] nums = {1,2,3,4,6,7,8,0};
+		int[] nums = {5,8,4,0,6,7,9};
+		
+//		int answer = 0;
+		
+//		처음 풀이 **런타임 에러
+//		int sum = 0;
+//		int n_sum =0;
+//		
+//		for(int  i =0; i<=9; i++) {
+//			sum+=i;
+//		}
+//		for(int i =0; i<nums.length; i++) {
+//			n_sum+=nums[i];
+//		}
+//		
+//		System.out.println(sum-n_sum);
+		
+		int n_sum =0;
+
+		
+		for(int i =0; i<nums.length; i++) {
+			n_sum+=nums[i];
+		}
+		int answer = 45-n_sum;
+		System.out.println(answer);
+		System.out.println(Arrays.toString(nums));
+	}
+	
+
+}
