@@ -1,0 +1,15 @@
+package _250514;
+
+public class _x만큼_간격이_있는_n개의_숫자 {
+
+	public static void main(String[] args) {
+		int  x =2;
+		int y = 5;
+		long[] answer = new long[String.valueOf(y).length()];
+			for(int  i =x; i>x*y; i+=x) {
+				System.out.println(i);
+			}
+	
+	}
+
+}

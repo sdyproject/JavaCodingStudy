@@ -1,0 +1,27 @@
+package _250514;
+
+import java.util.Arrays;
+
+public class 행렬의_덧셈 {
+
+	public static void main(String[] args) {
+		int[][] arr1 = {{1,2},{2,3}};
+		int[][] arr2 ={{3,4},{5,6}};
+		
+		 int[][] answer = new int[arr1.length][arr2.length];
+		for(int  i =0; i<arr1.length; i++) {
+			int a = arr1[i][0];
+			int b = arr2[i][1];
+			answer[i][0]=a+b;
+		}
+		
+		for (int i = 0; i < answer.length; i++) {
+		    for (int j = 0; j < answer[i].length; j++) {
+		        System.out.print(answer[i][j] + " ");
+		    }
+		    System.out.println(); 
+		}
+		
+	}
+
+}

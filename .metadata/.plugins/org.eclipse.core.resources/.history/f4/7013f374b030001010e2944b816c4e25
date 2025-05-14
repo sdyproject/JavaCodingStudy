@@ -1,0 +1,31 @@
+package _250514;
+
+import java.util.Arrays;
+
+public class _x만큼_간격이_있는_n개의_숫자 {
+
+	public static void main(String[] args) {
+//		int  x =2;
+//		int y = 5;
+		int  x =-4;
+		int y = 2;
+		long[] answer = new long[y];
+		int index =0;
+		if(x>0) {
+			for(int  i =x; i<=x*y; i+=x) {
+				answer[index++]+=i;
+				
+			}
+		}else {
+			for(int  i =x*y; i>=x; i+=x) {
+				answer[index++]+=i;
+				System.out.println(i);
+				
+			}
+		}
+			
+	
+			System.out.println(Arrays.toString(answer));
+	}
+
+}

@@ -1,0 +1,26 @@
+package _250513;
+
+
+public class 과일_장수 {
+
+	public static void main(String[] args) {
+		// 1점부터 k점까지 점수 분류 (3<=k<=9)
+		// 한 상자에 m개씩 담아 포장
+		// 상자에 담긴 사과중 가장 낮은 점수가 p (1<=p <=k)점인 경우 사과 한상자 가격 : p*m
+		
+		int k = 3;
+		int m = 4;
+		int[] point = {1, 2, 3, 1, 2, 3, 1};
+		int box =point.length%4;
+		int p = 1;
+			for(int num : point) {
+				if(p<=k) {
+				System.out.println(num);
+				}
+			}
+		
+		System.out.println(box);
+		
+	}
+
+}

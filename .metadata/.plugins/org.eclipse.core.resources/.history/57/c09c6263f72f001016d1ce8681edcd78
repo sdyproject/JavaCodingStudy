@@ -1,0 +1,36 @@
+package _250513;
+
+public class 약수의_개수와_덧셈 {
+
+	public static void main(String[] args) {
+		
+		int start =13;
+		int end =17;
+		
+//		int start =24;
+//		int end =27;
+		
+		int count =0;
+		int answer =0;
+		for(int i = start; i<=end; i++) {
+			System.out.println(i +":"+ count);
+			for(int j =1; j<=i; j++) {
+				
+				if(i%j==0) {
+					count++;
+					
+				}
+				
+				
+			}
+//			if(count%2==0) {
+//				System.out.println(i);
+//				answer+=i;
+//			}
+
+
+		
+	}
+
+	}
+}
