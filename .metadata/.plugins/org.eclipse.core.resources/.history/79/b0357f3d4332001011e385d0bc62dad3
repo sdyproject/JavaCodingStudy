@@ -1,0 +1,17 @@
+package _250516;
+
+public class 소수_만들기 {
+
+	public static void main(String[] args) {
+		int[] nums = {1,2,3,4};
+		int answer=0;
+		for(int i = 0; i<nums.length; i++) {
+			 answer=nums[i];
+			if(i==1) {
+				continue;
+			}
+		}
+		System.out.println(answer);
+	}
+
+}
