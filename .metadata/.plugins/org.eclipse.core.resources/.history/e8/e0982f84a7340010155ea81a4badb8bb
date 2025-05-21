@@ -1,0 +1,23 @@
+package _250519;
+
+public class 가장_가까운_같은_글자 {
+
+	public static void main(String[] args) {
+		String s ="banana";
+		
+		
+		int[] answer = new int[s.length()];
+//		char[] ch = s.toCharArray();
+//		
+//		for(int i =ch.length-1; i>=0; i--) {
+//			
+//			
+//			
+//		}
+		
+		System.out.println(s.lastIndexOf("b"));
+		
+		System.out.println(s.lastIndexOf("b",2));
+	}
+
+}

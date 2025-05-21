@@ -1,0 +1,14 @@
+package _250520;
+
+public class 둘만의_암호 {
+
+	public static void main(String[] args) {
+		/*
+		 * */
+		
+		String a = "a";
+		
+		System.out.println(Integer.valueOf(a));
+	}
+
+}

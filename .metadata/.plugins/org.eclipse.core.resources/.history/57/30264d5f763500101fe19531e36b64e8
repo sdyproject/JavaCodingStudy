@@ -1,0 +1,14 @@
+package _250520;
+
+public class 달리기_경주 {
+
+	public static void main(String[] args) {
+		String[] players= {"mumu", "soe", "poe", "kai", "mine"};
+		String[] callings= {"kai", "kai", "mine", "mine"};
+		
+        String[] answer = new String[players.length];
+        
+
+	}
+
+}
