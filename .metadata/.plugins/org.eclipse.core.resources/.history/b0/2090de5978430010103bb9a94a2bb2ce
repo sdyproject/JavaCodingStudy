@@ -1,0 +1,25 @@
+package _250607;
+
+import java.util.Arrays;
+
+public class 달리기_경주 {
+
+	public static void main(String[] args) {
+		String[] players = {"mumu", "soe", "poe", "kai", "mine"};
+		String[] callings = {"kai", "kai", "mine", "mine"};
+		
+		
+		for(String str : callings) {
+			for(int i =1; i<players.length; i++) {
+				if(str.equals(players[i])) {
+					String str3 = players[i];
+					players[i] = players[i-1];
+					players[i-1] = str3;
+				}
+			}
+		}
+		
+		System.out.println(Arrays.toString(players));
+	}
+
+}

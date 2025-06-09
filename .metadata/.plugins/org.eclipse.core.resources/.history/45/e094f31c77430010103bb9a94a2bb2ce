@@ -1,0 +1,15 @@
+package _250607;
+
+public class 달리기_경주 {
+
+	public static void main(String[] args) {
+		String[] players = {"mumu", "soe", "poe", "kai", "mine"};
+		String[] callings = {"kai", "kai", "mine", "mine"};
+		
+		
+		for(String str : callings) {
+			System.out.println(str);
+		}
+	}
+
+}

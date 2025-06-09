@@ -1,6 +1,6 @@
-package _250513;
+package _250607;
 
-public class 옹알이_2 {
+public class 달리기_경주 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
