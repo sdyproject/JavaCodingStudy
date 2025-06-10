@@ -1,0 +1,34 @@
+package _250610;
+
+public class 둘만의_암호 {
+
+	public static void main(String[] args) {
+		String s ="aukks";
+		String skip ="wbqd";
+		int index=5;
+		
+	
+			for(int i =0; i<s.length(); i++) {
+				 int a=Integer.valueOf(s.charAt(i));
+
+				for(int j =1; j<=index; j++) {
+					a++;
+				
+				}
+				System.out.println(" a : "+(char) a);
+
+				
+
+//				System.out.println(Integer.valueOf(s.charAt(i)));
+			}
+			
+			for(int k = 0; k<skip.length(); k++) {
+				int b=Integer.valueOf(skip.charAt(k));
+				
+				System.out.println(" b : "+(char) b);
+			}
+		
+		
+	}
+
+}
