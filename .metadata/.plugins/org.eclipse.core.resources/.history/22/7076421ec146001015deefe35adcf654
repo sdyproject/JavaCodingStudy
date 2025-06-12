@@ -1,0 +1,33 @@
+package _250611;
+
+import java.util.Arrays;
+
+public class 가장_가까운_같은_글자 {
+
+	public static void main(String[] args) {
+//		String s ="ananab";
+////		String s ="raboof";
+//
+//		  int[] answer = new int[s.length()];
+//		for(int i = 0; i<s.length(); i++) {
+//			int index= s.indexOf(s.charAt(i),i+1);
+//
+//			
+//			if(index>-1) {
+//				int count= index - i;
+//				System.out.println(count);
+//				answer[i] = count;
+//			}else {
+//				answer[i] = index;	
+//			}
+//			
+//		}
+//		Arrays.sort(answer);
+//
+//		System.out.println(Arrays.toString(answer));
+		String s = "banana";
+		int a = s.lastIndexOf('b', 2);
+		System.out.println(a);
+	}
+
+}
