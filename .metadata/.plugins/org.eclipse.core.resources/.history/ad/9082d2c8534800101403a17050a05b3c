@@ -1,0 +1,28 @@
+package _250613;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+public class 완주하지_못한_선수 {
+
+	public static void main(String[] args) {
+		String[] participant = {"mislav", "stanko", "mislav", "ana"};
+		String[] completion= {"stanko", "ana", "mislav"};
+        String answer = "";
+
+        List<String> list = new ArrayList<>(Arrays.asList(participant));
+//        System.out.println(list);
+        
+        for(int i =0; i<list.size(); i++) {
+        	if(participant.equals(completion)) {
+        		list.remove(i);
+        	}
+        }
+        
+        System.out.println(list);
+        
+	}
+
+}
