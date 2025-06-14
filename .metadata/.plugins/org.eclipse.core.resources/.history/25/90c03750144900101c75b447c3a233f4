@@ -1,0 +1,18 @@
+package _250614;
+
+public class _x만큼_간격이_있는_n개의_숫자 {
+
+	public static void main(String[] args) {
+		int x =-4;
+		int n =2;
+		
+		
+		long[] answer;
+		
+		for(int i =x; i<=x*n; i+=x) {
+			System.out.println(i);
+			System.out.println(x*n);
+		}
+	}
+
+}
