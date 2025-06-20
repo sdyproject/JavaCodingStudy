@@ -1,0 +1,26 @@
+package _250620;
+
+public class 콜라_문제 {
+
+	public static void main(String[] args) {
+		int answer = 0;
+		int n =20; 
+		
+		int a = 2; int b= 1; 
+
+//		int a = 3; int b= 1; 
+		
+		
+		while(n!=1) {
+			if(n%2==0) {
+				n=n/2;
+				answer+=n;
+			}else {
+				
+			}
+		}
+
+		System.out.println(answer);
+	}
+
+}

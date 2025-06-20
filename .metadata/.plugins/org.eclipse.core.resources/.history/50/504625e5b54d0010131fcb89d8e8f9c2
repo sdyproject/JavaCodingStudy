@@ -1,0 +1,22 @@
+package _250620;
+
+public class 옹알이_2 {
+
+	public static void main(String[] args) {
+//		String[] babbling= {"aya", "yee", "u", "maa"}; // 1
+		String[] babbling= {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"};  //2
+		
+        int answer = 0;
+
+		String[] baby = {"aya", "ye", "woo", "ma"};
+			
+		for(int i =0; i<baby.length; i++) {
+			for(int j=0; j<babbling.length; j++) {
+				if(babbling[j].contains(baby[i])) {
+					System.out.println(babbling[j]);
+				}
+			}
+		}
+	}
+
+}

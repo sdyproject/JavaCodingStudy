@@ -1,0 +1,31 @@
+package _250620;
+
+public class 시저_함수 {
+
+	public static void main(String[] args) {
+		String s = "AB"; 
+		int n = 1;
+//		String s ="z";
+//		int n = 1;
+//		String s ="";
+//		int n = 1;
+
+		
+        String answer = "";
+
+		for(int i =0; i<s.length(); i++) {
+			int num =  s.charAt(i)+n;
+//			answer+=Character.toString(s.charAt(i)+n);
+				answer += String.valueOf(num);
+			if(s.charAt(i)+n>'z') {
+				
+			}
+		
+		}
+		System.out.println(Integer.valueOf('B'));
+
+		
+		System.out.println(answer);
+	}
+
+}
