@@ -1,0 +1,34 @@
+package _250625;
+
+import java.util.Arrays;
+
+public class 가장_가까운_글자 {
+
+	public static void main(String[] args) {
+		String s  ="banana"; // -1, -1, -1, 2, 2, 2
+//		String s  ="foobar"; // -1, -1, 1, -1, -1, -1
+
+		int[] answer = new int[s.length()];
+		for(int i =0; i<s.length(); i++) {
+			
+			if(i==0) {
+				answer[i] = -1;
+				continue;
+			}
+			
+			int count=s.lastIndexOf(s.charAt(i), i-1);
+			
+			answer[i] = (count!=-1) ? i-count : count;
+//			if(count!=-1) {
+//				 answer[i]=i-count;
+//			}else {
+//				answer[i]=count;
+//			}
+			
+		}
+		
+		System.out.println(Arrays.toString(answer));
+		
+	}
+
+}

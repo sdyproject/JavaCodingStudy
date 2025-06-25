@@ -1,0 +1,40 @@
+package _250620;
+
+public class 시저_함수 {
+
+	public static void main(String[] args) {
+//		String s = "AB"; 
+//		int n = 1;
+//		String s ="z";
+//		int n = 1;
+		String s ="a B z";
+		int n = 4;
+
+		
+        String answer = "";
+
+		for(int i =0; i<s.length(); i++) {
+			char ch =  s.charAt(i);
+//			System.out.println((int) 'z'); // 122
+//			System.out.println((int) 'a'); //97
+//			System.out.println((int) 'z' - 25); // 97
+				
+			
+			if(ch+1>(int) 'z') {
+				ch-=25;
+			}
+			answer+=Character.toString(ch+1);
+	
+			
+			
+		
+		}
+
+	
+//		System.out.println(Integer.valueOf('B'));
+//
+//		
+		System.out.println(answer);
+	}
+
+}

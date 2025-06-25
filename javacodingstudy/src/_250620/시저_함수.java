@@ -3,27 +3,49 @@ package _250620;
 public class 시저_함수 {
 
 	public static void main(String[] args) {
-		String s = "AB"; 
-		int n = 1;
+//		String s = "AB"; 
+//		int n = 1;
 //		String s ="z";
 //		int n = 1;
-//		String s ="";
-//		int n = 1;
+		String s ="a B z";
+		int n = 4;
 
 		
         String answer = "";
 
-		for(int i =0; i<s.length(); i++) {
-//			answer+=Character.toString(s.charAt(i)+n);
-			if(s.charAt(i)+n>'z') {
-				
-			}
-		
-		}
-		System.out.println(Integer.valueOf('B'));
 
-		
-		System.out.println(answer);
+        
+        
+//        for(int  i = 0; i<s.length(); i++) {
+//        	char ch = s.charAt(i);
+//        	
+//        	if(ch==' ') {
+//        		answer+=ch;
+//        	}else {
+//        		
+//        	}
+//        }
+
+        	
+//      for(int  i = 0; i<s.length(); i++) {
+//    	char c = s.charAt(i);
+//    	int num = c+n;
+//    	
+//    	if(s.charAt(i)==' ') {
+//    		answer+=" ";
+//    	}else if(num> 'z') {
+//    		num-=26;
+//			answer+=Character.toString(num);
+//    	}else {
+//        	answer+= Character.toString(num);
+//
+//    	}
+//    	
+//    	
+//   
+//    }
+//    System.out.println(answer);
+        
 	}
 
 }
