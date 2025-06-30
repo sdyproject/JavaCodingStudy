@@ -1,0 +1,18 @@
+package _250630;
+
+public class 문자열_내_마음대로_정렬하기 {
+
+	public static void main(String[] args) {
+		String[] answer;
+		String[] strings = {"sun", "bed", "car"};
+		int n = 1;
+//		String[] strings = {};
+//		int n = 1;
+		
+		
+		for(String str : strings) {
+			System.out.println(str.charAt(n));
+		}
+	}
+
+}

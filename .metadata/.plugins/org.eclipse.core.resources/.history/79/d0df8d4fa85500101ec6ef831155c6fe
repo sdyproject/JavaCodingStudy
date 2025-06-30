@@ -1,0 +1,15 @@
+package _250630;
+
+public class 최대공약수와_최소공배수 {
+
+	public static void main(String[] args) {
+		int n=3; int m =12;
+//		int n=2; int m=3;
+		
+		
+		
+		
+	}
+
+
+}

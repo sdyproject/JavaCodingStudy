@@ -1,0 +1,34 @@
+package _250630;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class 문자열_내_마음대로_정렬하기 {
+
+	public static void main(String[] args) {
+		String[] answer;
+		String[] strings = {"sun", "bed", "car"};
+		int n = 1;
+//		String[] strings = {"abce", "abcd", "cdx"};
+//		int n = 2;
+		
+		char ch = strings[0].charAt(n);
+		for(int i = 1; i<strings.length; i++) {
+			if(ch>strings[i].charAt(i)) {
+				String word = strings[i-1];
+				strings[i-1] = strings[i];
+				strings[i] = word;
+			}
+		}
+		
+		System.out.println(Arrays.toString(strings));
+		
+		
+		
+		
+//		  Arrays.sort(strings, Comparator.comparing(s -> s.charAt(n)));
+//		
+//		  System.out.println(Arrays.toString(strings));
+	}
+
+}
