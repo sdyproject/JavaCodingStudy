@@ -1,0 +1,18 @@
+package _250707;
+
+public class 옹알이_2 {
+
+	public static void main(String[] args) {
+		 int answer = 0;
+//		String[] babbling = {"aya", "yee", "u", "maa"};
+		String[] babbling = {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"};
+	
+		
+		//조카 단어
+		// "aya", "ye", "woo", "ma"
+			String a = "yeye";
+			String b= a.replace("ye", "");
+			System.out.println(b);
+	}
+
+}

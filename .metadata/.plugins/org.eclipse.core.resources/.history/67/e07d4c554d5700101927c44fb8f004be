@@ -1,0 +1,19 @@
+package _250702;
+
+public class 대충_만든_자판 {
+
+	public static void main(String[] args) {
+		String[] keymap = {"ABACD", "BCEFD"}; String[] targets= {"ABCD","AABB"};
+//		String[] keymap = {}; String[] targets= {};
+//		String[] keymap = {}; String[] targets= {};
+		
+		String a = "ABCD"; 
+//		for(int i =0; i<keymap.length; i++) {
+//			for(int j =0; j<targets.length; j++) {
+//				
+//			}
+//		}
+		System.out.println(a.lastIndexOf('B'));
+	}
+
+}
