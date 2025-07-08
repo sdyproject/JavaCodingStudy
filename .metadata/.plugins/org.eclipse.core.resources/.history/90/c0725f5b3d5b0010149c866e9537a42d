@@ -22,7 +22,7 @@ public class 옹알이_2 {
 					String str = babbling[j].substring(baby_word[i].length());
 					
 					if(str.contains(baby_word[i])) {
-						babbling[j] = " ";
+						babbling[j] = str.substring(baby_word[i].length());
 					}else {
 						babbling[j] = str;
 					}

@@ -7,10 +7,9 @@ public class 옹알이_2 {
 	public static void main(String[] args) {
 		 int answer = 0;
 		 //해결못함
-		 // 
 //		String[] babbling = {"aya", "yee", "u", "maa"};
 		String[] babbling = {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"};
-		String [] baby_word = {"aya", "ye", "ma", "woo"};
+		String [] baby_word = {"aya", "ye", "woo", "ma"};
 		
 		//조카 단어
 		// "aya", "ye", "woo", "ma"
@@ -22,7 +21,7 @@ public class 옹알이_2 {
 					String str = babbling[j].substring(baby_word[i].length());
 					
 					if(str.contains(baby_word[i])) {
-						babbling[j] = " ";
+						babbling[j] = str.substring(baby_word[i].length());
 					}else {
 						babbling[j] = str;
 					}
