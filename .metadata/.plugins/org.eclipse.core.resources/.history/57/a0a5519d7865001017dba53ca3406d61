@@ -1,0 +1,37 @@
+package _250720;
+
+import java.util.ArrayList;
+
+public class 문자열_나누기 {
+
+	public static void main(String[] args) {
+		String s = "banana";
+//		String s = "abracadabra";
+//		String s = "aaabbaccccabba";
+		  int answer = 0;
+		  int count = 0;
+		  int not_count = 0;
+		 ArrayList<String> list = new ArrayList<>();
+		 
+		 for(int i =0; i<s.length(); i++) {
+			 for(int j =0; j<s.length(); j++) {
+				 if(s.charAt(i)==s.charAt(j)) {
+					 count ++;
+				 }else {
+					 not_count++; 
+				 }
+				 
+				 if(count==not_count) {
+					 answer++;
+					 count = 0; not_count = 0;
+					 break;
+				 }
+				
+			 }
+		 }
+		 
+		 System.out.println(answer);
+
+	}
+		
+}
