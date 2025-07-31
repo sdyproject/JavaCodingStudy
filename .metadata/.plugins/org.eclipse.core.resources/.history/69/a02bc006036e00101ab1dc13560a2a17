@@ -1,0 +1,22 @@
+package _250723;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class 숫자_짝꿍 {
+
+	public static void main(String[] args) {
+//		String X = "100"; String Y= "2345";
+//		String X = "100"; String Y= "203045";
+//		String X = "100"; String Y= "123450";
+//		String X = "12321"; String Y= "42531";
+		String X = "5525"; String Y= "1255";
+		String answer  = "";
+		
+	
+			
+		
+		
+	}
+
+}
