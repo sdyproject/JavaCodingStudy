@@ -25,9 +25,9 @@ public class 숫자_짝꿍 {
 		
 //		String X = "100"; String Y= "2345";
 //		String X = "100"; String Y= "203045";
-//		String X = "100"; String Y= "123450";
+		String X = "100"; String Y= "123450";
 //		String X = "12321"; String Y= "42531";
-		String X = "5525"; String Y= "1255";
+//		String X = "5525"; String Y= "1255";
 		String answer  = "";
 		
 //		char[] x = X.toCharArray();
@@ -39,7 +39,6 @@ public class 숫자_짝꿍 {
 		
 		/// 2번째  입출력 String X = "100"; String Y= "203045"; 맞지않음 
 		/// 중접for문으로 같은값을 공백처리하여 해결할려고 했으나  00 정수가 아닌 값이 발생
-		
 		
 		
 		char[] y = Y.toCharArray();
@@ -60,20 +59,30 @@ public class 숫자_짝꿍 {
 			answer= "-1";
 		}
 		
+		
+		
+		
 		list.sort(Collections.reverseOrder());
 		
 		for(int i =0; i<list.size(); i++) {
+			  
+			
+			
 			answer += list.get(i);
 		}
 		
-		// 00으로 나오는 문제 해결를 위해 사용한 코드
-		// 해결은 됐지만 시간초과 실패 
+		
 		if(Integer.valueOf(answer)==0) {
 			answer = "0";
 		}
 		
 		
 		System.out.println(answer);
+		
+		
+		
+		
+
 	}
 
 }
