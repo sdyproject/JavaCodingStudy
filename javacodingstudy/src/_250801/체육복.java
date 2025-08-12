@@ -1,5 +1,7 @@
 package _250801;
 
+import java.util.Arrays;
+
 public class 체육복 {
 
 	public static void main(String[] args) {
@@ -8,8 +10,26 @@ public class 체육복 {
 //		int n = 3;  int[] lost = {3}; int[] reserve = {1}:
 		int answer = n-reserve.length;
 		
-		//한시간내 해결못함 retry
-
+		int count  = 0;
+		
+		for(int  i =0; i<reserve.length; i++) {
+			int front =reserve[i]+1;
+			int back =reserve[i]-1;
+			for(int j = 0; j<lost.length; j++) {
+				
+				System.out.println(Arrays.toString(reserve));
+				if(lost[j]==0) {
+					continue;
+				}
+				if(lost[j]== front || lost[j]== back) {
+					lost[j] = 0;
+					count++;
+					break;
+				}
+			}
+		}
+		System.out.println(count+answer);
+		System.out.println(answer);
 	}
 
 }

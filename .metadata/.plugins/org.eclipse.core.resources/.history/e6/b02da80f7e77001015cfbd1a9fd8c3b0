@@ -1,0 +1,53 @@
+package _250812;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class 신고_결과_받기 {
+
+	public static void main(String[] args) {
+		// 게시판 불량 이용자 신고하고 처리 결과를 메일로 발송하는 시스템 개발
+		// 유저는 한번에 한명의 유저 신고가능
+		// 신고 횟수 제한 없고 서로 다른 유저 계속 신고 가능
+		// 한 유저를 여러번 신고 할수 있지만 동일한 유저에 대한 신고 횟수는 1회로 처리
+		
+		//k번 이상 신고된 유저는 게시판 이용 정지 , 모든 유저에게 정지 사실을 메일로 발송
+		//신고 내용을 취합여 마지막에 한꺼번에 게시판 이용 정지를 시키고 정지 메일 발송
+		String[] id_list = {"muzi", "frodo", "apeach", "neo"}; String[] report = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"}; int k =2 ;
+//		String[] id_list = {"con", "ryan"}; String[] report = {"ryan con", "ryan con", "ryan con", "ryan con"}; int k = 3;
+		
+		
+        int[] answer = new int[id_list.length];
+        
+        Map<String, HashSet<String>> map = new HashMap<>();
+        
+        
+        
+        for(String s : id_list) {
+        	map.put(s, new HashSet<>());
+        }
+        
+        for(String re : report) {
+        	String[] list = re.split(" ");
+        			map.get(list[1]).add(list[0]);
+        }
+        
+        for(int i = 0; i<id_list.length; i ++) {
+        	HashSet<String> send = map.get(id_list[i]);
+        	System.out.println(send);
+            if (send.size() >= k) {
+            	
+            		if()
+            }
+        }
+                
+        System.out.println(Arrays.toString(answer));
+        
+
+	}
+
+}
