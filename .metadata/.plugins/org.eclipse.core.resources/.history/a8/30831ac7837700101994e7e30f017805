@@ -21,9 +21,6 @@ public class 신고_결과_받기 {
 //		String[] id_list = {"con", "ryan"}; String[] report = {"ryan con", "ryan con", "ryan con", "ryan con"}; int k = 3;
 		
 		
-		
-		
-		//해결 못함 - retry필요
         int[] answer = new int[id_list.length];
         
         Map<String, HashSet<String>> map = new HashMap<>();
