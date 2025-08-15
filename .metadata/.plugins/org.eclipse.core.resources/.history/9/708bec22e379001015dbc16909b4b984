@@ -1,0 +1,13 @@
+package _250815;
+
+public class 이상한_문자_만들기 {
+
+	public static void main(String[] args) {
+		String s = "try hello world";
+		
+		String[] arr = s.split(" ");
+		
+		System.out.println(arr);
+	}
+
+}
