@@ -1,0 +1,28 @@
+package _250816;
+
+import java.util.Arrays;
+
+public class 최대공약수와_최소공배수 {
+
+	public static void main(String[] args) {
+		int n= 3; int m =12;
+//		int n= 2; int m =5;
+		
+		 int[] answer = new int[2];
+		
+		 
+		if(n<m) {
+			while(n!=0) {
+				int num = m % n;
+				m = n;
+				n = num;
+				answer[0] = m;
+			}
+			
+		
+		}
+		
+		System.out.println(Arrays.toString(answer));
+	}
+
+}
