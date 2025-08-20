@@ -1,0 +1,15 @@
+package _250819;
+
+public class 푸드_파이트_대회 {
+
+	public static void main(String[] args) {
+		int [] food = {};
+		
+//		int [] food = {};
+
+		String answer = "";
+
+		System.out.println(3/2);
+	}
+
+}

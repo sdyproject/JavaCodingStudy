@@ -1,0 +1,10 @@
+package _1차원_배열;
+
+public class 개수_세기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
