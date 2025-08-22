@@ -36,7 +36,7 @@ public class 바구니_뒤집기 {
 		System.out.println(Arrays.toString(arr));
 		
 		for(int a : arr) {
-			System.out.print(a +" ");
+			System.out.println(a +" ");
 		}
 	}
 

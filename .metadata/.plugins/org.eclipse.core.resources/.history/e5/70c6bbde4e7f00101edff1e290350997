@@ -9,26 +9,18 @@ public class 과제_안_내신_분 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int[] arr = new int[30];
-
+		int first = 0;
+		int second = 0;
 		
-		for (int i = 0; i < 28; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			
 			int n = sc.nextInt();
 			arr[n-1] = n;
 			
-			
-			
 		
 		}
+		
 		System.out.println(Arrays.toString(arr));
-		
-		for (int i = 0; i < arr.length; i++) {
-			
-			if(arr[i]==0) {
-				System.out.println(i+1);
-			}
-		}
-		
 	}
 	
 

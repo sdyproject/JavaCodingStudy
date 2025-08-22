@@ -25,7 +25,8 @@ public class 바구니_뒤집기 {
 		
 			for(int j2 = i; j2 <=j; j2++) {
 				int m = j--;
-				
+				System.out.println(j);
+				System.out.print(m);
 				int temp =  arr[j2];
 				arr[j2] = arr[m];
 				arr[m] = temp;
