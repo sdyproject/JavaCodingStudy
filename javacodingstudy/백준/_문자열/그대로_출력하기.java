@@ -1,9 +1,15 @@
 package _문자열;
 
+import java.util.Scanner;
+
 public class 그대로_출력하기 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		String S = sc.nextLine();
+		
+		
 
 	}
 

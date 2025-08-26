@@ -1,0 +1,29 @@
+package _문자열;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+public class 알파벳_찾기 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		Map<Character,  Integer> map = new HashMap<>();
+		
+		
+		 for (char ch = 'a'; ch <= 'z'; ch++) {
+	            map.put(ch, -1);  
+	        }
+
+		
+		System.out.println(map);
+		
+		
+		
+		
+	}
+
+}

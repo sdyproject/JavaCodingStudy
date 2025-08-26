@@ -1,0 +1,19 @@
+package _문자열;
+
+import java.util.Scanner;
+import java.util.Set;
+
+public class 알파벳_찾기 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String S =  sc.next();
+		
+		
+		for(int  i = 0; i < S.length(); i++) {
+			
+			
+		}
+	}
+
+}

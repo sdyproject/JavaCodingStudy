@@ -23,7 +23,7 @@ public class 행렬덧셈_2738 {
 		for(int i =0; i<N; i++) {
 			for(int j =0; j<M; j++) {
 				A[i][j] += sc.nextInt();
-				System.out.println(A[i][j]+" ");
+				System.out.print(A[i][j]+" ");
 			}
 			System.out.println();
 		}
