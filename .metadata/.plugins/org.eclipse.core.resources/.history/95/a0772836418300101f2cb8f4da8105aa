@@ -1,0 +1,47 @@
+package _2차원_배열;
+
+import java.util.Scanner;
+
+public class 최댓값 {
+
+	public static void main(String[] args) {
+
+		 long start = System.currentTimeMillis();	
+	 Scanner sc =  new Scanner(System.in);
+	 
+	 int[][] arr =  new int[9][9];
+	 int max = 0;
+	 int row = 0;
+	 int col = 0;
+
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				int n = sc.nextInt();
+				arr[i][j] = n;
+				
+				if(max<arr[i][j]) {
+		        	max = arr[i][j];
+		        	row = i;
+		        	col  = j;
+		        	
+		        }
+			}
+		}
+		
+		
+	 System.out.println(max);
+	 System.out.println(row+1+ " " +(col+1));
+	 
+	 long end = System.currentTimeMillis();
+	 double elapsedTime = (end - start) / 1000.0; // 
+     System.out.println("실행 시간: " + elapsedTime + " 초");
+		
+		
+		
+
+	}
+
+	
+	
+	
+}

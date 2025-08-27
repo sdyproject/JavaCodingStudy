@@ -19,7 +19,7 @@ public class 세로읽기_10798 {
 		for (int j = 0; j < 15; j++) {
 			for (int i = 0; i < 5; i++) {
 			 if(A[i][j] != null) {
-				 System.out.println(A[i][j]);
+				 System.out.print(A[i][j]);
 			 }
 			}
 		}
