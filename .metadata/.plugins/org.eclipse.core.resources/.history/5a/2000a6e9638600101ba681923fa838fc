@@ -1,0 +1,40 @@
+package 심화_1;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+public class 단어_공부 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.next();
+		String answer = " ";
+		Map<Character, Integer> map = new HashMap<>();
+
+		for (int i = 0; i < str.length(); i++) {
+			map.put(str.charAt(i), map.getOrDefault(str.charAt(i), 0) + 1);
+
+		}
+		
+		int max = Collections.max(map.values());
+		
+		for(char ch : map.keySet()) {
+			if(map.get(ch)==max) {
+				answer = "?";
+				break;
+			}else {
+				answer = String.valueOf(map.get(ch)).toUpperCase();
+				
+			}
+		}
+		System.out.println(answer);
+		
+		
+
+	}
+
+}
