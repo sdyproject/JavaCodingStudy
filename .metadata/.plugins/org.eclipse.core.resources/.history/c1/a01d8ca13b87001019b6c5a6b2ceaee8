@@ -6,18 +6,18 @@ public class 크로아티아_알파벳 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String[] arr = { "c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z=" };
+		String[] arr = {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
 		String str = sc.next();
-		// 입력
-		// dz=ak = 3 nljj =3
-
+		//입력
+		//dz=ak = 3 nljj =3
+		
+		int answer = 0;
 		for (int i = 0; i < arr.length; i++) {
-			if (str.contains(arr[i])) {
-				str = str.replace(arr[i], " ");
-			}
+				if(str.contains(arr[i])) {
+					answer++;
+				}
 		}
-		System.out.println(str);
-		System.out.println(str.length());
+		System.out.println(answer);
 	}
 
 }

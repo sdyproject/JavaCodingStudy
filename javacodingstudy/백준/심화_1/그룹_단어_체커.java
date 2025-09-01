@@ -1,0 +1,13 @@
+package 심화_1;
+
+import java.util.Scanner;
+
+public class 그룹_단어_체커 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+	}
+
+}
