@@ -1,0 +1,10 @@
+package 약수_배수와_소수_1;
+
+public class 약수들의_합 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
