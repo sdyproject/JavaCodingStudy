@@ -1,0 +1,24 @@
+package 브루트_포스;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class 분해합 {
+
+	public static void main(String[] args) {
+		Scanner sc  = new Scanner(System.in);
+		
+//		int N = sc.nextInt();
+//		String def = String.valueOf(N);
+//		System.out.println(def);
+//
+//		char[] ch =  def.toCharArray();
+//		for (int i = 0; i < ch.length; i++) {
+//			answer -= i;
+//		}
+//
+//		System.out.println(answer-);
+//		System.out.println(Arrays.toString(ch));
+	}
+
+}

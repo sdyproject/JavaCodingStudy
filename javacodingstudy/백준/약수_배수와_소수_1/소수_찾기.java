@@ -12,7 +12,7 @@ public class 소수_찾기 {
 		for (int i = 0; i < N; i++) {
 			int num = sc.nextInt();
 			boolean a = true;
-			if (num < 2)
+			if (num < 2)	
 				continue;
 			
 			for (int j = 2; j <=Math.sqrt(num); j++) {
