@@ -1,0 +1,10 @@
+package 정렬;
+
+public class 좌표_정렬하기_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
