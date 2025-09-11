@@ -1,0 +1,14 @@
+package 집합과_맵;
+
+import java.util.Scanner;
+
+public class 숫자_카드 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int N =sc.nextInt();
+		
+		
+	}
+
+}
