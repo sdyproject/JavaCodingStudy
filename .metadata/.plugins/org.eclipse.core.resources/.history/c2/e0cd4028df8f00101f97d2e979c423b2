@@ -1,5 +1,6 @@
+package 집합과_맵;
 
-public class 기하1_직사각형과_삼각형 {
+public class 대칭_차집합 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

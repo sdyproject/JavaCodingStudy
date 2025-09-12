@@ -1,6 +1,6 @@
-package 기하1_직사각형과_삼각형;
+package 집합과_맵;
 
-public class 직사각형 {
+public class 듣보잡 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
