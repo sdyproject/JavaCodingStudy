@@ -1,0 +1,10 @@
+package 집합과_맵;
+
+public class 서로_다른_부분_문자열의_개수 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
