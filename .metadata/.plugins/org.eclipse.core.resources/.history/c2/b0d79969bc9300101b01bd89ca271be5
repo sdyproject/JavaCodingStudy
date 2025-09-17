@@ -1,0 +1,10 @@
+package 약수_배수와_소수_2;
+
+public class 소수_구하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
