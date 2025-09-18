@@ -11,7 +11,7 @@ public class 소수_찾기 {
 		
 		boolean[] arr = new boolean[n+1];
 		
-		Arrays.fill(arr, 2,arr.length-1, true);
+		Arrays.fill(arr, 2,arr.length-1, true);;
 		System.out.println(Arrays.toString(arr));
 
 		
