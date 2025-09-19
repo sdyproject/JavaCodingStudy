@@ -1,0 +1,37 @@
+package 약수_배수와_소수_2;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
+
+public class 창문_닫기 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		int N = Integer.parseInt(br.readLine());
+		
+		int[] arr = new int[N+1];
+		Arrays.fill(arr, 1);
+		
+		for (int i = 2; i * i <= N; i++) {
+			if(arr[i-1]==1) {
+			for (int j = i * i; j <= N; j+=i) {
+					arr[j-1] = 0;
+				}
+			}
+		}
+		int count = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i]==1) {
+				count++;
+			}
+		}
+		System.out.println(count);
+	}
+
+}
