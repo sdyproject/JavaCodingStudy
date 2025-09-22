@@ -1,0 +1,136 @@
+package 스택_큐_덱_1;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+import java.util.concurrent.ArrayBlockingQueue;
+
+public class 큐_2 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+		int N = Integer.parseInt(br.readLine());
+
+//		Queue<Integer> que = new ArrayBlockingQueue<>(N);
+//
+//		for (int i = 0; i < N; i++) {
+//			StringTokenizer st = new StringTokenizer(br.readLine());
+//
+//			String cmd = st.nextToken();
+//
+//			switch (cmd) {
+//			case "push":
+//				int val = Integer.parseInt(st.nextToken());
+//				que.add(val);
+//				break;
+//			case "pop":
+//				if (que.poll() == null) {
+//					sb.append(-1).append('\n');
+//				} else {
+//					sb.append(que.poll()).append('\n');
+//				}
+//				break;
+//			case "size":
+//				sb.append(que.size()).append('\n');
+//				break;
+//			case "empty":
+//				if (que.isEmpty()) {
+//					sb.append(-1).append('\n');
+//				} else {
+//					sb.append(0).append('\n');
+//				}
+//
+//				break;
+//			case "front":
+//				if (que.peek() == null) {
+//					sb.append(-1).append('\n');
+//				} else {
+//					sb.append(que.peek()).append('\n');
+//
+//				}
+//				break;
+//			case "back":
+//
+//				if (!que.isEmpty()) {
+//					for (int j = 0; j < que.size() - 1; j++) {
+//						que.poll();
+//					}
+//				} else {
+//					sb.append(que.peek()).append('\n');
+//
+//				}
+//
+//				break;
+//
+//			default:
+//				break;
+//			}
+//		}
+//		System.out.println(sb.toString());
+		
+		Deque<Integer> q = new LinkedList<>();
+
+		for (int i = 0; i < N; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+
+			String cmd = st.nextToken();
+
+			switch (cmd) {
+			case "push":
+				int val = Integer.parseInt(st.nextToken());
+				q.add(val);
+				break;
+			case "pop":
+				Integer po =  q.poll();
+				if (po == null) {
+					sb.append(-1).append('\n');
+				} else {
+					sb.append(po).append('\n');
+				}
+				break;
+			case "size":
+				sb.append(q.size()).append('\n');
+				break;
+			case "empty":
+				if (q.isEmpty()) {
+					sb.append(1).append('\n');
+				} else {
+					sb.append(0).append('\n');
+				}
+
+				break;
+			case "front":
+				Integer pe = q.peek();
+				if (pe == null) {
+					sb.append(-1).append('\n');
+				} else {
+					sb.append(pe).append('\n');
+
+				}
+				break;
+			case "back":
+
+				Integer  last = q.peekLast();	
+				if(last == null) {
+					sb.append(-1).append('\n');
+				}else {
+					sb.append(last).append('\n');
+				}
+				break;
+
+			default:
+				break;
+			}
+		}
+		System.out.println(sb.toString());
+	}
+
+}

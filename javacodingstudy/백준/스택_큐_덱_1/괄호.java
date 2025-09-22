@@ -8,51 +8,39 @@ import java.io.OutputStreamWriter;
 import java.util.Stack;
 
 public class 괄호 {
-	//해결 못함
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int T = Integer.parseInt(br.readLine());
-
+		
+		
 		for (int i = 0; i < T; i++) {
 			String word = br.readLine();
 			Stack<Character> stack = new Stack<>();
 
 			for (int j = 0; j < word.length(); j++) {
-				char c = word.charAt(j);
-
-				if (c == '(') {
-					stack.push(c);
-				} else if (stack.isEmpty()) {
-					bw.write("NO" + "\n");
+				char ch = word.charAt(j);
+				if (ch == '(') {
+					stack.push(ch);
 				} else {
-					stack.pop();
-				}
+					if(stack.isEmpty()) {
+						stack.push(ch);
+						 break; 	
+					}else {
+						stack.pop();
+					}
+					
+				} 
+
 			}
 			if (stack.isEmpty()) {
-				bw.write("YES" + "\n");
-
+				bw.write("YES"+'\n');
 			} else {
-				bw.write("NO" + "\n");
+				bw.write("NO"+"\n");
 
 			}
 		}
-
-//		for (int i = 0; i < T; i++) {
-//		String word = br.readLine();
-//		char[] ch = word.toCharArray();
-//		int left = 0;
-//		int rigth = 0;
-//		for (int j = 0; j < ch.length; j++) {
-//			if(ch[j]=='(') {
-//				left++;
-//			}else if(ch[j]==')'){
-//				rigth++;
-//			}
-//		}
-//		String answer = (left==rigth) ? "yes" : "no";
-//		System.out.println(answer);
-//	}
+		bw.close();
 	}
 
 }
