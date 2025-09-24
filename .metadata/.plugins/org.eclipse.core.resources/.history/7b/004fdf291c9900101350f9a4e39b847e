@@ -1,6 +1,6 @@
-package 약수_배수와_소수_2;
+package 스택_큐_덱_1;
 
-public class 분수_합 {
+public class 균형잡힌_세상 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

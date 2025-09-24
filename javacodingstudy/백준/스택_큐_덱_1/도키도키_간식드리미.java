@@ -5,25 +5,25 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class 도키도키_간식드리미 {
 
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		
-		
+
 		int N = Integer.parseInt(br.readLine());
-		
-		
+
+		Stack<Integer> stack = new Stack<>();
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		
+		int first = 1;
+		// 5 4 1 3 2
 		for (int i = 0; i < N; i++) {
-			
+			int turn = Integer.parseInt(st.nextToken());
 		}
-		
-		
+
 	}
 
 }

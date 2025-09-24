@@ -1,6 +1,7 @@
 package 스택_큐_덱_1;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Deque;
@@ -10,7 +11,6 @@ public class 카드2 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringBuilder sb = new StringBuilder();
 		
 		int N = Integer.parseInt(br.readLine());
 		
@@ -24,12 +24,11 @@ public class 카드2 {
 		  q.addFirst(q.getLast());
 		  q.removeLast();
 		  N--;
-		  System.out.println(q);
+		 
 		
 		}
-	
 		
-
+		System.out.println(q.peek());
 	}
 
 }

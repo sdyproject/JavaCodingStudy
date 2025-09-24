@@ -1,0 +1,21 @@
+package 스택_큐_덱_1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class 균형잡힌_세상 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		while(true) {
+			StringTokenizer st = new StringTokenizer(br.readLine(),"\n");
+
+			String str  = st.nextToken();
+			System.out.println(str);
+		}
+	}
+
+}
