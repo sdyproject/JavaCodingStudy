@@ -18,12 +18,30 @@ public class 도키도키_간식드리미 {
 
 		Stack<Integer> stack = new Stack<>();
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		int first = 1;
+		int num = 1;
 		// 5 4 1 3 2
 		for (int i = 0; i < N; i++) {
 			int turn = Integer.parseInt(st.nextToken());
+
+			if (turn == num) {
+				num++;
+				while (!stack.isEmpty() && stack.peek() == num) {
+					stack.pop();
+					num++;
+				}
+			} else {
+				stack.push(turn);
+			}
 		}
 
+		if (stack.isEmpty()) {
+			bw.write("Nice");
+		} else {
+			bw.write("Sad");
+		}
+		
+		bw.flush();
+		bw.close();
 	}
 
 }
