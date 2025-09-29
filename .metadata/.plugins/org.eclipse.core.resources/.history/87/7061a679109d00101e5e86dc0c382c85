@@ -1,0 +1,10 @@
+package 조합론;
+
+public class 이항_계수_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
