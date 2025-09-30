@@ -1,0 +1,10 @@
+package 심화_2;
+
+public class 약수 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

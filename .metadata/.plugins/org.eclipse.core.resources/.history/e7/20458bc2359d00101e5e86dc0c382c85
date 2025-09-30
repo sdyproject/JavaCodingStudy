@@ -26,7 +26,6 @@ public class 도키도키_간식드리미 {
 				num++;
 				while (!stack.isEmpty() && stack.peek() == num) {
 					stack.pop();
-					num++;
 				}
 			} else {
 				stack.push(turn);

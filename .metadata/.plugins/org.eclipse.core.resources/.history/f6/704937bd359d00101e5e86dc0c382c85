@@ -23,7 +23,7 @@ public class 도키도키_간식드리미 {
 			int turn = Integer.parseInt(st.nextToken());
 
 			if (turn == num) {
-				num++;
+				
 				while (!stack.isEmpty() && stack.peek() == num) {
 					stack.pop();
 					num++;
