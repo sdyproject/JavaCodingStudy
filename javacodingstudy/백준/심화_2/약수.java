@@ -25,7 +25,7 @@ public class 약수 {
 		}
 		System.out.println(min * max);
 		
-		
+		//https://propercoding.tistory.com/68#google_vignette
 	}
 
 }

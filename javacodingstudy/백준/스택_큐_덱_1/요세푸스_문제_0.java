@@ -19,6 +19,8 @@ public class 요세푸스_문제_0 {
 		int K = Integer.parseInt(st.nextToken());
 		
 		
+		
+		
 		for (int i = 1; i <= N; i++) {
 			q.add(i);
 		}
