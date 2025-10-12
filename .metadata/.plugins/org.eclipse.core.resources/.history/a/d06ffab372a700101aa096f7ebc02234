@@ -1,0 +1,10 @@
+package 기하1_직사각형과_삼각형;
+
+public class 네번째_점 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

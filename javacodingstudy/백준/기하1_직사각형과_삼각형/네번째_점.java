@@ -1,0 +1,30 @@
+package 기하1_직사각형과_삼각형;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class 네번째_점 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int count_x = 0;
+		int count_y = 0;
+		for (int i = 0; i < 3; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			int x = Integer.parseInt(st.nextToken());
+			int y = Integer.parseInt(st.nextToken());
+			
+			if(count_x !=x) {
+				count_x = x;
+			}
+			if(count_y !=y) {
+				count_y = y;
+			}
+			
+		}
+		System.out.println(count_x +"\s" + count_y);
+	}
+
+}

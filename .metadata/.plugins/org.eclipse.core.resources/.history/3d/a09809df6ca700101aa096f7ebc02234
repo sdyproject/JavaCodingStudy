@@ -1,0 +1,13 @@
+package 정렬;
+
+import java.util.Scanner;
+
+public class 수_정렬하기_3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+	}
+
+}

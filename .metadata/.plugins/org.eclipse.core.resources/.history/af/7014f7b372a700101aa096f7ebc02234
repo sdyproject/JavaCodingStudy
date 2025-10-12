@@ -16,6 +16,7 @@ public class 크로아티아_알파벳 {
 				str = str.replace(arr[i], " ");
 			}
 		}
+		System.out.println(str);
 		System.out.println(str.length());
 	}
 
