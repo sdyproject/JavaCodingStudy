@@ -13,31 +13,16 @@ public class 칸토어_집합 {
 		
 		String in;
 		while((in = br.readLine()) !=null) {
-			int N = Integer.parseInt(in);
-			int line =  (int) Math.pow(3, N);
+			int N = Integer.parseInt(br.readLine());
+			int len =  (int) Math.pow(3, N);
 			
 			sb = new StringBuilder();
-			for (int i = 0; i < line; i++) {
+			for (int i = 0; i < len; i++) {
 				sb.append("-");
 			}
-			space(0,line);
-			System.out.println(sb);
-		}
-		
-	}
-	
-	public static void space(int start, int len) {
-		if(len == 1) {
-			return;
-		}
-		int size = len/3;
-		
-		for (int i = start+size; i < start+2*size ; i++) {
-			sb.setCharAt(i, ' ');
 			
 		}
-		space(start,size);
-		space(start+2*size, size);
+		System.out.println(sb.toString());
 		
 	}
 

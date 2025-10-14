@@ -13,7 +13,7 @@ public class 칸토어_집합 {
 		
 		String in;
 		while((in = br.readLine()) !=null) {
-			int N = Integer.parseInt(in);
+			int N = Integer.parseInt(br.readLine());
 			int line =  (int) Math.pow(3, N);
 			
 			sb = new StringBuilder();

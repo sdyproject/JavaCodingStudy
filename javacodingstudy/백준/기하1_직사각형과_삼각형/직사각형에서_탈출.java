@@ -1,6 +1,6 @@
-package 재귀;
+package 기하1_직사각형과_삼각형;
 
-public class 알고리즘_수업_병합_정렬_1 {
+public class 직사각형에서_탈출 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

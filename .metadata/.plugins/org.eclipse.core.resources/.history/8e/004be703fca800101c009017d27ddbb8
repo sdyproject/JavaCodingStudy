@@ -1,6 +1,6 @@
-package 재귀;
+package 백트래킹;
 
-public class 재귀의_귀재 {
+public class N과_M_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
