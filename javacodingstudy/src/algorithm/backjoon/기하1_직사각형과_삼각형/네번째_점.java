@@ -1,0 +1,44 @@
+package algorithm.backjoon.기하1_직사각형과_삼각형;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.StringTokenizer;
+
+public class 네번째_점 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		Set<Integer> set1 = new HashSet<>();
+		Set<Integer> set2 = new HashSet<>();
+		for (int i = 0; i < 3; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			int x = Integer.parseInt(st.nextToken());
+			int y = Integer.parseInt(st.nextToken());
+			
+		
+			
+			if(set1.contains(x)) {
+				set1.remove(x);
+			}else {
+				set1.add(x);
+			}
+			
+			if(set2.contains(y)) {
+				set2.remove(y);
+			}else {
+				set2.add(y);
+			}
+			
+			
+		}
+		
+		int x_num = set1.iterator().next();
+		int y_num = set2.iterator().next();
+		System.out.println(x_num+ " " +y_num );
+		
+	}
+
+}

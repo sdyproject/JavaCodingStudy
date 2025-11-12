@@ -1,0 +1,10 @@
+package javacodingstudy;
+
+public class _1부터_n까지_역순으로_출력하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

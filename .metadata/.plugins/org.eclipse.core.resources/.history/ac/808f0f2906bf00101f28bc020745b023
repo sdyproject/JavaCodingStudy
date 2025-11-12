@@ -1,0 +1,10 @@
+package algorithm.backjoon._2차원배열;
+
+public class 색종이 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

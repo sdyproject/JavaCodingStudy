@@ -1,0 +1,36 @@
+package algorithm.programmers._250329;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class 순서_바꾸기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] num_list = {2,1,6};
+		int n =1;
+//		int[] num_list = {5, 2, 1, 7, 5};
+//		int n =3;
+		
+//		ArrayList<Integer> answer =  new ArrayList<>();
+		
+		int[] answer = new int[num_list.length];
+		int index =0;
+		for(int i =n; i<num_list.length; i++) {
+			answer[index] = num_list[i];
+			index++;
+			System.out.println(index);
+		}
+		
+		for(int j =0; j<n; j++) {
+			System.out.println(index);
+			answer[index] = num_list[j];
+			index++;
+			System.out.println(index);
+			
+		}
+		
+		System.out.println(Arrays.toString(answer));
+	}
+
+}

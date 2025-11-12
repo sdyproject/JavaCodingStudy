@@ -1,0 +1,37 @@
+package algorithm.backjoon.onearray;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class 공_바꾸기 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt(); int M = sc.nextInt();
+		
+		int[] n_arr = new int[N];
+		
+		for(int i = 0; i<N; i++) {
+			n_arr[i] = i+1;
+		}
+		
+		for(int k = 0; k<M; k++) {
+			int i = sc.nextInt();
+			int j = sc.nextInt();
+			
+			int temp = n_arr[i-1];
+			n_arr[i-1] = n_arr[j-1];
+			n_arr[j-1] = temp;
+		}
+		
+		
+		
+		for(int num : n_arr) {
+			System.out.print(num + " ");
+		}
+		
+		
+	}
+
+}

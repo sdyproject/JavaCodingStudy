@@ -1,0 +1,17 @@
+package algorithm.programmers._250402;
+
+import java.util.Arrays;
+
+public class 공백으로_구분하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string ="programmers";
+		
+		String[] answer = my_string.split(" ");
+
+		System.out.println(Arrays.toString(answer));
+		
+	}
+
+}

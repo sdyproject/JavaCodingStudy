@@ -1,0 +1,46 @@
+package algorithm.backjoon.재귀;
+
+import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class 알고리즘_수업_병합_정렬_1 {
+// 해결못함 
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int A = Integer.parseInt(st.nextToken());
+		int K = Integer.parseInt(st.nextToken());
+		
+		st = new StringTokenizer(br.readLine());
+		int[] arr = new int[A];
+		for (int i = 0; i < A; i++) {
+			arr[i]= Integer.parseInt(st.nextToken());
+		}
+
+		mergearr(arr);
+	}
+	
+	public static void mergearr(int[] arr) {
+		if(arr.length <= 1) return;
+		int half  =  arr.length/2;
+		int[] frontarr = new int[half];
+		int[] backarr = new int[arr.length - half];
+		frontarr= Arrays.copyOfRange(arr, 0, half);
+		backarr=Arrays.copyOfRange(arr, half, arr.length);
+		mergearr(backarr);
+		mergearr(frontarr);
+		System.out.println(Arrays.toString(frontarr));
+		System.out.println(Arrays.toString(backarr));
+		
+		
+	}
+	
+	public static void merge(int[] frontarr, int[] backarr) {
+		
+	}
+
+}

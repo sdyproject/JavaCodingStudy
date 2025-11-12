@@ -1,0 +1,70 @@
+package algorithm.backjoon.스택_큐_덱_1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class 풍선_터뜨리기 {
+
+// 		입력
+//		5
+//		3 2 1 -3 -1
+//		출력 
+//		1 4 5 3 2
+// 
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+
+		int N = Integer.parseInt(br.readLine());
+
+		Deque<int[]> dq = new ArrayDeque<>();
+
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int[] arr = new int[N];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+		}
+
+		for (int i = 1; i < N; i++) {
+			dq.add(new int[] { i + 1, arr[i] });
+		}
+
+//		System.out.print("[");
+//		for (int[] arr2 : dq) {
+//		    System.out.print(Arrays.toString(arr2) + " ");
+//		}
+//		System.out.println("]");
+
+		int turn = arr[0];
+		sb.append("1 ");
+		while (!dq.isEmpty()) {
+			if (turn > 0) {
+				for (int i = 1; i < turn; i++) {
+					dq.addLast(dq.pollFirst());
+				}
+				int[] arr2 = dq.poll();
+				turn = arr2[1];
+				sb.append(arr2[0]).append(" ");
+			} else {
+				for (int i = 1; i < Math.abs(turn); i++) {
+					dq.addFirst(dq.pollLast());
+				}
+				int[] arr2 = dq.pollLast();
+				turn = arr2[1];
+				sb.append(arr2[0]).append(" ");
+			}
+		}
+
+		System.out.println(sb.toString());
+
+	}
+
+}

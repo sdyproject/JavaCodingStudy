@@ -1,0 +1,29 @@
+package algorithm.programmers._251028;
+
+public class 삼총사 {
+	
+	static int count;
+	public static void main(String[] args) {
+		int[] number = {-2, 3, 0, 2, -5};
+		
+		
+		three(number,0,0,0);
+		
+		 
+		System.out.println(count);
+	}
+	public static void three(int[] number, int index,int depth, int sum) {
+		if(depth==3) {
+			if(sum == 0)  count++;
+			return ;
+		}
+		
+		
+		for (int i = index; i < number.length; i++) {
+			 three(number, i+1, depth+1, sum+number[index]);
+		}
+		
+		
+	}
+
+}

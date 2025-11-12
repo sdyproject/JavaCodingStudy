@@ -1,0 +1,44 @@
+package algorithm.backjoon.약수_배수와_소수_2;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
+
+public class 창문_닫기 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		int N = Integer.parseInt(br.readLine());
+		// 메모리 부족 실패
+//		int[] arr = new int[N+1];
+//		Arrays.fill(arr, 1);
+//		
+//		for (int i = 2; i <= N; i++) {
+//			for (int j = i; j <=N; j+=i) {
+//				if(arr[j]==1) {
+//					arr[j] = 0;
+//				}else{
+//					arr[j] = 1; 
+//				}
+//			}
+//		}
+//		int count = 0;
+//		for (int i = 1; i < arr.length; i++) {
+//			if(arr[i]==1) {
+//				count++;
+//			}
+//		}
+//		bw.write(count);
+		
+		int answer = (int) Math.sqrt(N);
+		//char코드로 인식하기 때문에 문자열 변환 출력
+		bw.write(Integer.toString(answer));
+		bw.close();
+	}
+
+}

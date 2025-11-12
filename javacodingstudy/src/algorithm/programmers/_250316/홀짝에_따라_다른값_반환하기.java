@@ -1,0 +1,37 @@
+package algorithm.programmers._250316;
+
+import java.util.Scanner;
+
+public class 홀짝에_따라_다른값_반환하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        int count =1;
+        int answer=0;
+        
+        	
+        if(n%2==0) {
+        	while(count<=n) {
+        		if(count % 2 == 0) {
+    			 answer += count*count;
+    			}
+        		count++;
+    		}
+        }else{
+        	while(count<=n) {
+        		if(count % 2 != 0) {
+        			answer += count;
+        		}
+        		count++;
+        	}
+        }
+        	
+        	
+       
+    	System.out.println(answer);	
+
+	}
+
+}

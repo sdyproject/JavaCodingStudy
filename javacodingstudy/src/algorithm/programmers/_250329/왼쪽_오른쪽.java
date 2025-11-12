@@ -1,0 +1,27 @@
+package algorithm.programmers._250329;
+
+import java.util.ArrayList;
+
+public class 왼쪽_오른쪽 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		String[] str_list = {"u", "u", "l", "r"};
+		String[] str_list = {"l"};
+		ArrayList<String> answer= new ArrayList<>();
+		
+		for(int i = 0; i<str_list.length; i++) {
+			
+			if(str_list[i] != "l") {
+				answer.add(i,str_list[i]);
+				
+			}else {
+				break;
+			}
+			
+		}
+		
+		System.out.println(answer);
+	}
+
+}
