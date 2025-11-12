@@ -1,0 +1,19 @@
+package algorithm.programmers._250421;
+
+
+public class _0_떼기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String n_str ="0010";
+		String answer ="";
+		
+		
+		int n = Integer.parseInt(n_str);
+		System.out.println(n);
+		
+		answer+=String.valueOf(n);
+		System.out.println(answer);
+	}
+
+}

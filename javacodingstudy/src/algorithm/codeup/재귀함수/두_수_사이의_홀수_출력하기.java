@@ -1,0 +1,29 @@
+package algorithm.codeup.재귀함수;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class 두_수_사이의_홀수_출력하기 {
+
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		
+		number(a,b);
+	}
+
+	public static void number(int a, int b) {
+		if(a > b) {
+			return;
+		}
+		
+		if(a%2!=0) {
+			System.out.println(a);
+		}
+		number(a+1, b);
+	}
+}
