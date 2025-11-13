@@ -1,0 +1,10 @@
+package algorithm.codeup.재귀함수;
+
+public class _2진수_변환 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
