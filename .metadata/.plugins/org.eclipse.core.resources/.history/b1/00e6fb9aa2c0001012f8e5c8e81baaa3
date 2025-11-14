@@ -10,7 +10,7 @@ public class _2진수_변환 {
 
 		int n = Integer.parseInt(br.readLine());
 		if(n == 0) {
-			System.out.print(0);
+			System.out.println(0);
 		}else {
 			binary(n);
 		}
