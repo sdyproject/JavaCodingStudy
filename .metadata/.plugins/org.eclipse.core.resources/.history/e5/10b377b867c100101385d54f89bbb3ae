@@ -14,15 +14,14 @@ public class SuperSum {
 		int k = Integer.parseInt(st.nextToken());
 		int n = Integer.parseInt(st.nextToken());
 		while((num =br.readLine()) != null) {
-			SuperSum(k, n);
+			System.out.println(SuperSum(k, n));
 		}
 		}
-	public static void SuperSum(int k, int n) {
-		if(k == 0) {
-			return;
+	public static int SuperSum(int k, int n) {
+		if(n == 1) {
+			return ;
 		}
-		
-		 
+		return SuperSum(k-1, n-1);
 	}
 
 }

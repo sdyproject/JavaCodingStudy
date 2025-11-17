@@ -22,7 +22,7 @@ public class SuperSum {
 			return;
 		}
 		
-		 
+		SuperSum(k-1, n-1);
 	}
 
 }

@@ -5,24 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class SuperSum {
-	//해결 x
+public class 파스칼의_삼각형_2 {
+	// 해결못함
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String num;
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		int k = Integer.parseInt(st.nextToken());
-		int n = Integer.parseInt(st.nextToken());
-		while((num =br.readLine()) != null) {
-			SuperSum(k, n);
-		}
-		}
-	public static void SuperSum(int k, int n) {
-		if(k == 0) {
-			return;
-		}
 		
-		 
+
 	}
 
 }

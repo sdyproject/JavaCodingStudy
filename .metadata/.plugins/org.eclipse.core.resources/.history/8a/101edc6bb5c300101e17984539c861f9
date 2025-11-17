@@ -21,8 +21,8 @@ public class SuperSum {
 		if(k == 0) {
 			return;
 		}
-		
-		 
+		 SuperSum(k-1, n-1);
+		 System.out.println(n);
 	}
 
 }
