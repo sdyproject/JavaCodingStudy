@@ -1,6 +1,6 @@
-package 동적_계획법_1;
+package algorithm.codeup.재귀함수;
 
-public class 알고리즘수업_피보나치_수_1 {
+public class 계단_오르기_2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
