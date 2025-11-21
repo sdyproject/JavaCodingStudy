@@ -1,0 +1,38 @@
+package algorithm.codeup.재귀함수;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+public class 우박수_길이_large {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		int n = a;
+
+		collatz(a, b, n, 0);
+
+	}
+	public static void collatz(int a, int b, int n, int count) {
+		if(a == b) {
+			System.out.println(count);
+			return;
+		}
+		
+		if(n == 1) {
+			count++;
+			
+			collatz(a+1, b, n+1, count);
+		}
+		
+		if(n%2==0) {
+			collatz(a, b, n/2, count+1);
+		}else {
+			collatz(a, b, n*3+1, count+1);
+		}
+	}
+}
