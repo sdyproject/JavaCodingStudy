@@ -1,0 +1,10 @@
+package algorithm.codeup;
+
+public class 케익_자르기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

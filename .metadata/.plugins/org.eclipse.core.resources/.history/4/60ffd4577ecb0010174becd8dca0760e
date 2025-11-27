@@ -1,0 +1,10 @@
+package algorithm.codeup.탐색기반설계;
+
+public class 삼각화단_만들기_Small {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

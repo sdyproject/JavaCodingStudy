@@ -1,0 +1,10 @@
+package algorithm.codeup.탐색기반설계;
+
+public class 보물_찾기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package algorithm.codeup.탐색기반설계;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class 삼각화단_만들기_Small {
+	static int count;
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int n = Integer.parseInt(br.readLine());
+		count = 0;
+		triangle(n,1,1,1);
+		System.out.println(count);
+	}
+
+	public static void triangle(int n, int a, int b, int c) {
+		if(a == n && b == n && c ==n) return;
+		
+		if(a+b+c == n) {
+			count++;
+		}else {
+			triangle(n, a+1, b, c);
+			triangle(n, a, b+1, c);
+			triangle(n, a, b, c+1);
+		}
+		return;
+	}
+}
