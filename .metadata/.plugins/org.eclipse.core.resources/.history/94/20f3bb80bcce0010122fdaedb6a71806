@@ -1,0 +1,10 @@
+package algorithm.programmers.lv1;
+
+public class 삼각형의_완성조건_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
