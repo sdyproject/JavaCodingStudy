@@ -5,18 +5,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class 세균_증식 {
+public class 피자_나눠_먹기_3 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
-
+		
+		int slice = Integer.parseInt(st.nextToken());
 		int n = Integer.parseInt(st.nextToken());
-		int t = Integer.parseInt(st.nextToken());
 		
-		int answer = n * (int) Math.pow(n, t);
+		int answer = (n % slice == 0) ? n/slice : n/slice+1;
 		System.out.println(answer);
-		
 	}
 
 }

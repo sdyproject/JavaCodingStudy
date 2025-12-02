@@ -14,7 +14,7 @@ public class 세균_증식 {
 		int n = Integer.parseInt(st.nextToken());
 		int t = Integer.parseInt(st.nextToken());
 		
-		int answer = n * (int) Math.pow(n, t);
+		int answer =n * (int) Math.pow(n, t);
 		System.out.println(answer);
 		
 	}
