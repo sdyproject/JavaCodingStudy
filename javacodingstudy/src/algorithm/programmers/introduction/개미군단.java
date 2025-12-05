@@ -10,12 +10,13 @@ public class 개미군단 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int hp = Integer.parseInt(br.readLine());
 		int answer = 0;
-		while(hp!=0) {
-			if(hp%5 == 0) {
-				hp = hp/5;
-				answer+= hp;
-			}
-		}
+		
+		answer += (hp / 5);
+		hp %= 5;
+		answer += (hp / 3);
+		hp %= 3;
+		answer += (hp / 1);
+		System.out.println(answer);
 	}
 
 }
