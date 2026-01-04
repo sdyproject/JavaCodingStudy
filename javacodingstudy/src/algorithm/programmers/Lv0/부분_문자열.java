@@ -1,0 +1,16 @@
+package algorithm.programmers.Lv0;
+
+public class 부분_문자열 {
+
+	public static void main(String[] args) {
+		
+//		String str1 = "abc";
+//		String str2 = "aabcc";
+		String str1 = "tbt";
+		String str2 = "tbbttb";
+		int answer =(str2.contains(str1)) ? 1: 0;
+		
+		System.out.println(answer);
+	}
+
+}

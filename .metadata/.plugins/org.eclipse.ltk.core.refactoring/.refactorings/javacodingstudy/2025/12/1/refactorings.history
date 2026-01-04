@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;문자열_겹쳐쓰기.java&apos; to &apos;javacodingstudy/src/algorithm.programmers.Lv0&apos;&#x0D;&#x0A;- Original project: &apos;javacodingstudy&apos;&#x0D;&#x0A;- Destination element: &apos;javacodingstudy/src/algorithm.programmers.Lv0&apos;&#x0D;&#x0A;- Original element: &apos;algorithm.programmers._250316.문자열_겹쳐쓰기.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;algorithm.programmers.Lv0" element1="/src&lt;algorithm.programmers._250316{문자열_겹쳐쓰기.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1767101650847" units="1" version="1.0"/>
+</session>

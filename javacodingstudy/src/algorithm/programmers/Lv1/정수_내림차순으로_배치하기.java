@@ -1,0 +1,56 @@
+package algorithm.programmers.Lv1;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class 정수_내림차순으로_배치하기 {
+
+	public static void main(String[] args) {
+		long n = 118372;
+//		long answer =0;
+//		String str = Long.toString(n);
+//		List<Integer> list = new ArrayList<>();
+//		
+//		for(int i =0; i<str.length(); i++) {
+//			list.add(str.charAt(i)-'0');
+//		}
+//		
+//		  list.sort(Comparator.reverseOrder());
+//		
+//		  System.out.println(list);
+//		  
+//		  for(int num : list) {
+//			  answer = answer * 10 + num;
+//		  }
+//		  
+//		 System.out.println(answer);
+//		
+		
+		
+		//다른 풀이 
+		long answer =0;
+		String[] str = String.valueOf(n).split("");
+		Arrays.sort(str);
+		
+		StringBuilder sb = new StringBuilder();
+		for(String s : str) {
+			sb.append(s);
+		}
+		
+		
+		answer=Long.parseLong(sb.reverse().toString());
+		
+		System.out.println(answer);
+		
+		
+		
+		
+		
+		  
+	}
+
+}

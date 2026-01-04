@@ -1,0 +1,28 @@
+package algorithm.programmers.Lv0;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class 삼각형의_완성조건_1 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		int[] sides = new int[3];
+		for (int i = 0; i < 3; i++) {
+		int a = Integer.parseInt(st.nextToken());
+		sides[i] = a;
+		}
+		Arrays.sort(sides);
+		
+		int answer = (sides[2] < sides[0]+sides[1]) ? 1: 2;
+		
+		System.out.println(answer);
+	}
+
+}

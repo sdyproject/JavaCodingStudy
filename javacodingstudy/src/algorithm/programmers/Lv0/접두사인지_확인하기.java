@@ -1,0 +1,27 @@
+package algorithm.programmers.Lv0;
+
+public class 접두사인지_확인하기 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String my_string="banana";  
+		String is_prefix="bananan";
+		
+		//"banana"의 모든 접두사는 "b", "ba", "ban", "bana", "banan", "banana"입니다.
+		
+		
+	int answer = 0;
+	String ba ="";
+		for(int  i = 0; i<my_string.length(); i++) {
+			 ba +=my_string.charAt(i);
+//			 System.out.println(ba);
+			answer += (is_prefix.equals(ba)) ? 1:0; 
+			
+		}
+		
+		System.out.println(answer);
+	}
+
+	}
+
+
