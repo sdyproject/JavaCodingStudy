@@ -34,7 +34,7 @@ public class 배열_만들기_2 {
 	
 	//정규식
 	for(int i = l; i<=r; i++) {
-		if (String.valueOf(i).matches("[05]+")) {
+		if (String.valueOf(i).matches("5")) {
 		    answer.add(i);
 		}
 	}
