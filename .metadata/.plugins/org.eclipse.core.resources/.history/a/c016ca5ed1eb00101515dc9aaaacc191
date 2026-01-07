@@ -10,18 +10,9 @@ public class 수_나누기 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int number = Integer.parseInt(br.readLine());
 		
-
-        int answer = 0;
-      
-        while(number != 0){
-            answer += number % 100;
-            number /= 100;
-        }
-
-        System.out.println(answer);
-    }
-
+		System.out.println(number % 100+number / 100);
+		System.out.println(number / 100);
 
 	}
 
-
+}

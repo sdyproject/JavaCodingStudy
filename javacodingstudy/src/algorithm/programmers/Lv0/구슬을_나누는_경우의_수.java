@@ -1,0 +1,28 @@
+package algorithm.programmers.Lv0;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class 구슬을_나누는_경우의_수 {
+	static int[] arr;
+	static boolean[] check;
+	
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		int balls = Integer.parseInt(st.nextToken());
+		int share = Integer.parseInt(st.nextToken());
+		int answer = 0;
+		for (int i = 0; i < balls; i++) {
+			
+			for (int j = i+1; j <= balls; j++) {
+					answer++;
+			}
+		}
+		System.out.println(answer);
+	}
+	
+}
