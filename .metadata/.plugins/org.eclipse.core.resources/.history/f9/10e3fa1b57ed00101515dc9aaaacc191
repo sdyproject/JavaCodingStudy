@@ -21,8 +21,8 @@ public class 주사위_게임_2 {
 		
 		if(a != b &&  b != c && a != c) {
 			answer = sum;
-		}else if (a == b && a == c ) {
-			answer = sum * (a*a+b*b+c*c) * (a*a*a+b*b*b+c*c*c);
+		}else if (a == b && b == c ) {
+			answer = sum*(a*a+b*b+c*c)*(a*a+b*b*+c*c*c);
 		}else {
 			answer = sum*(a*a+b*b+c*c);
 		}
