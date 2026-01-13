@@ -14,7 +14,12 @@ public class 공_던지기 {
 		
 		int k =  Integer.parseInt(br.readLine());
 		
-		
+		for (int i = 1; i < k; i++) {
+			int count = 0;
+			for (int j = 1; j <= number.length; j++) {
+				
+			}
+		}
 	}
 
 }

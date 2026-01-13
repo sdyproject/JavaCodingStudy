@@ -1,0 +1,48 @@
+package algorithm.programmers.Lv0;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class _2의_영역 {
+
+	public static void main(String[] args) {
+		// 정수 배열 arr가 주어집니다. 배열 안의 2가 모두 포함된 가장 작은 연속된 부분 배열을 return 하는 solution 함수를 완성해 주세요.
+		// 	단, arr에 2가 없는 경우 [-1]을 return 합니다.
+		int[] arr = {1, 2, 1, 2, 1, 10, 2, 1};
+
+		int start= -1;
+		int end = -1;
+		ArrayList<Integer> answer = new ArrayList<>();
+		for(int i=0; i<arr.length; i++) {
+				if(arr[i]==2) {
+				start=i;
+				break;
+				}
+		}
+		
+		for(int i=arr.length-1; i>=0; i--) {
+			if(arr[i]==2) {
+			end=i;
+			break;
+			}
+	}
+		if(start==-1 && end==-1) {
+			answer.add(Integer.valueOf(-1));
+		}else {
+			int[] arr2 =Arrays.copyOfRange(arr, start, end+1);
+			for(int num : arr2) {
+				answer.add(num);
+			}
+			
+		}
+		System.out.println(start);
+		System.out.println(end);
+		
+		System.out.println(answer);
+
+		
+		
+		
+	}
+
+}

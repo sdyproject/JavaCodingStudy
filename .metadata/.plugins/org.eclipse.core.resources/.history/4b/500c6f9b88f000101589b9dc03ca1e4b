@@ -1,6 +1,6 @@
 package algorithm.programmers.Lv0;
 
-public class 수_나누기 {
+public class _2의_영역 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
