@@ -1,0 +1,18 @@
+package algorithm.programmers.Lv0;
+
+public class 정수_찾기 {
+
+	public static void main(String[] args) {
+//		int[] num_list  = {1, 2, 3, 4, 5};
+//		int n = 3;
+		int[] num_list  = {15, 98, 23, 2, 15};
+		int n = 20;
+		int answer = 0;
+		if(num_list.toString().contains(String.valueOf(n))) {
+			answer = 1;
+		}
+		System.out.println(num_list.toString());
+		System.out.println(answer);
+	}
+
+}

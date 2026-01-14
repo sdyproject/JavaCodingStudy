@@ -11,8 +11,9 @@ public class _0_떼기 {
 		
 		int n = Integer.parseInt(n_str);
 		System.out.println(n);
-//		answer+=String.valueOf(n);
-//		System.out.println(answer);
+		
+		answer+=String.valueOf(n);
+		System.out.println(answer);
 	}
 
 }

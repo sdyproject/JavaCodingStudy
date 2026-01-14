@@ -8,9 +8,17 @@ public class 배열의_길이를_2의_거듭제곱으로_만들기 {
 	public static void main(String[] args) {
 
 		int[] arr = {58, 172, 746, 89};
+		int[] answer;
 		int len =  arr.length;
 		
+		while(len != 1) {
+			len = len / 2;
 			
+			
+		}
+		if(len == 1) {
+			answer = Arrays.copyOfRange(arr, 0, len-1);
+		}
 	}
 
 }
