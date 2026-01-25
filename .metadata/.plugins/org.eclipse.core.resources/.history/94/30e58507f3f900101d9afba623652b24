@@ -3,7 +3,6 @@ package algorithm.programmers.Lv0;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class 분수의_덧셈 {
@@ -17,18 +16,6 @@ public class 분수의_덧셈 {
 		int numer2 =  Integer.parseInt(st.nextToken());
 		int denom2 =  Integer.parseInt(st.nextToken());
 		
-		int numer = numer1 * denom2 + numer2 * denom1;
-		int denom = denom1 * denom2;
-		
-		int gcd = getGCD(numer,denom);
-		int[] answer = {numer/gcd, denom/gcd};
-		System.out.println(Arrays.toString(answer));
-	}
-	public static int getGCD(int a , int b) {
-		if(a % b == 0) {
-			return b;
-		}
-		return getGCD(b, a % b);
 	}
 
 }
