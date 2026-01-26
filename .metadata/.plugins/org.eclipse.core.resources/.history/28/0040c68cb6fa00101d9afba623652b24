@@ -13,6 +13,7 @@ public class 문자열이_몇번_등장하는지_세기 {
 		
 		String myString =  st.nextToken();
 		String pat =  st.nextToken();
+		char ch = pat.charAt(0);
 		int answer = 0;
 		
 		for(int i =myString.length()-1; i>=0; i--) {

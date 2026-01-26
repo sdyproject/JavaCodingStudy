@@ -13,17 +13,17 @@ public class 문자열이_몇번_등장하는지_세기 {
 		
 		String myString =  st.nextToken();
 		String pat =  st.nextToken();
+		char ch = pat.charAt(0);
 		int answer = 0;
 		
-		for(int i =myString.length()-1; i>=0; i--) {
-		    
-        	if(myString.endsWith(pat)) {
-        		answer++;
-        		myString= myString.substring(0, i);
-        	}else {
-        		myString=myString.substring(0, i);
-        	}
-        }
+		for (int i = 0; i < myString.length(); i++) {
+			if(myString.charAt(i) == ch) {
+				if(pat.equals(myString.substring(i,pat.length()-1))) {
+					answer++;
+				}
+				
+			}
+		}
 		System.out.println(answer);
 	}
 

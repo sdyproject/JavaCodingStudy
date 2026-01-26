@@ -10,20 +10,16 @@ public class 뒤에서_5등_위로 {
 		int[] answer = new int[5];
 		
 		Arrays.sort(num_list);
-		answer =  Arrays.copyOfRange(num_list, 5, num_list.length);
-		//런타임 실패
-//		Arrays.sort(num_list);
-//
-//		
-//		int index =0;
-//		for(int i=5; i<num_list.length; i++ ) {
-//			answer[index++] = num_list[i];
-//		}
-//
-//		System.out.println(Arrays.toString(answer));
-//		
+
 		
+		int index =0;
+		for(int i=5; i<num_list.length; i++ ) {
+			answer[index++] = num_list[i];
+		}
+
 		System.out.println(Arrays.toString(answer));
+		
+		
 		
 	}
 

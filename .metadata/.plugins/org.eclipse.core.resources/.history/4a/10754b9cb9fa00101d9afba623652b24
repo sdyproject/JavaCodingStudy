@@ -1,0 +1,13 @@
+package algorithm.programmers.Lv0;
+
+public class 다음에_올_숫자 {
+
+	public static void main(String[] args) {
+//		int[] common = {1,2,3,4};
+		int[] common = {2,4,8};
+		
+		int answer = common[0] + (5-1)  *(common[1]-common[0]);
+		System.out.println(answer);
+	}
+
+}
