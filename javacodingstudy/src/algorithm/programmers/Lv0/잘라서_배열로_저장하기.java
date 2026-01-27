@@ -1,22 +1,34 @@
 package algorithm.programmers.Lv0;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class 잘라서_배열로_저장하기 {
 
-	public static void main(String[] args) {
-		String my_str = "abc1Addfggg4556b";
-		int n =6;
-//		String my_str = "abcdef123";
-//		int n =3;
-
-//		my_str.split(, n)
-//		System.out.println(my_str.length());
-		for(int i = 0; i<my_str.length(); ) {
-			System.out.println(i);
-			System.out.println(my_str.substring(i,n+i));
-		}
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		String my_str = st.nextToken();
+		int n = Integer.parseInt(st.nextToken());
 		
+		
+		
+//		int len = my_str.length() / n + my_str.length() % n;
+//		System.out.println(len);
+//		System.out.println(my_str.length());
+//		System.out.println(my_str.length() / n);
+//		System.out.println(my_str.length() % n);
+//		
+//		int index = 0;
+//		if(my_str.length() % n == 0) {
+//			for (int i = 0; i < my_str.length(); i+=len) {
+//			answer[index] =  my_str.substring(i, len+i);
+//			
+//			}
+//		}
 
 	}
 

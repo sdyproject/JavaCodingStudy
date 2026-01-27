@@ -1,0 +1,29 @@
+package algorithm.programmers.Lv0;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class 숫자_찾기 {
+
+	public static void main(String[] args)throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int num = Integer.parseInt(st.nextToken());
+		int k = Integer.parseInt(st.nextToken());
+		
+		
+		 int result = String.valueOf(num).indexOf(String.valueOf(k));
+		 int answer = (result == -1) ? -1 : result+1;
+		 System.out.println(answer);
+		 
+		
+		 
+		 //다른 풀이 
+		 // "-"를 num값에 붙여 인덱스를 1부터 카운트 하여 내풀이와 다르+1를 할 필요 없게 풀이
+		 System.out.println(("-"+num).indexOf(String.valueOf(k)));
+		 
+	}
+
+}
