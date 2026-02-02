@@ -1,0 +1,27 @@
+package algorithm.programmers.Lv0;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class 최빈값_구하기 {
+
+	public static void main(String[] args) {
+		int[] arrary = {1,2,3,3,3,4};
+		int max = 0;
+		int answer = 0;
+		Map<Integer, Integer> map = new HashMap<>();
+		for (int i = 0; i < arrary.length; i++) {
+			map.put(arrary[i], map.getOrDefault(arrary[i], 0)+1);
+			 int count= map.get(arrary[i]);
+			 if(max < count) {
+				 max =  count;
+				 answer = arrary[i];
+			 }else {
+				answer = -1; 
+			 }
+		}
+		System.out.println(answer);
+		
+	}
+
+}
