@@ -17,23 +17,23 @@ public class 최댓값_만들기_2 {
 			numbers[i] = Integer.parseInt(st.nextToken(", "));
 		}
 		System.out.println(Arrays.toString(numbers));
-//		int answer = 0;
-//		
-//		for (int i = 0; i < numbers.length; i++) {
-//			for (int j = i+1; j < numbers.length; j++) {
-//				
-//				int sum =  numbers[i] * numbers[j];
-//				if(answer > sum) {
-//					answer = sum;
-//				}
-//			}
-//		}
-//		System.out.println(answer);
-//		
 		
-		Arrays.sort(numbers);
-		int answer =  Math.max(numbers[0] * numbers[1], numbers[numbers.length-2] * numbers[numbers.length-1]);
+		int answer = 0;
+		for (int i = 0; i < numbers.length; i++) {
+			for (int j = i+1; j < numbers.length; j++) {
+				
+				int plus = numbers[i] * numbers[j];
+				if(answer < plus) {
+					answer = plus;
+				}
+			}
+		}
 		System.out.println(answer);
+		
+//		다른 풀이
+		
+//		Arrays.sort(numbers);
+//		int answer =  Math.max(numbers[0] * numbers[1], numbers[numbers.length-2] * numbers[numbers.length-1]);
 	}
 
 }
