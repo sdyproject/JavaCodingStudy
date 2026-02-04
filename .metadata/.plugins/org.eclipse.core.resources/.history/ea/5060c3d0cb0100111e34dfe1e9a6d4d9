@@ -10,15 +10,13 @@ public class 가까운_수 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
-		int[] array = {10, 11, 12};
+		int[] array = {3, 10, 28};
+		int answer = Integer.MIN_VALUE;
 		Arrays.sort(array);
-		int answer  = 0;
-		int count = Integer.MAX_VALUE;
 		for (int i = 0; i < array.length; i++) {
-			int num = Math.abs(n - array[i]);
-			if(num < count) {
-				count = num; 
+			if(n - array[i] > answer) {
 				answer = array[i];
+				break;
 			}
 		}
 		System.out.println(answer);
