@@ -3,7 +3,10 @@ package algorithm.programmers.Lv0;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 import java.util.StringTokenizer;
 
 public class 잘라서_배열로_저장하기 {
@@ -13,23 +16,23 @@ public class 잘라서_배열로_저장하기 {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		String my_str = st.nextToken();
 		int n = Integer.parseInt(st.nextToken());
-		
-		
-		
-//		int len = my_str.length() / n + my_str.length() % n;
-//		System.out.println(len);
-//		System.out.println(my_str.length());
-//		System.out.println(my_str.length() / n);
-//		System.out.println(my_str.length() % n);
-//		
-//		int index = 0;
-//		if(my_str.length() % n == 0) {
-//			for (int i = 0; i < my_str.length(); i+=len) {
-//			answer[index] =  my_str.substring(i, len+i);
-//			
-//			}
-//		}
+			
+		ArrayList<String> answer = new ArrayList<>();
+		for (int i = 0; i < my_str.length(); i+=n) {
+			int end =  Math.min(i+n, my_str.length());
+			answer.add(my_str.substring(i, end));
 
+		}
+		System.out.println(answer);
+		
+		/*
+		 * // //// int len = my_str.length() / n + my_str.length() % n; ////
+		 * System.out.println(len); //// System.out.println(my_str.length()); ////
+		 * System.out.println(my_str.length() / n); ////
+		 * System.out.println(my_str.length() % n); //// // String[] answer = {}; //
+		 * if(my_str.length() % n == 0) { // for (int i = 0; i < my_str.length();
+		 * i+=len) { // answer[] = my_str.substring(i, len+i); // // } // }
+		 */
 	}
 
 }
