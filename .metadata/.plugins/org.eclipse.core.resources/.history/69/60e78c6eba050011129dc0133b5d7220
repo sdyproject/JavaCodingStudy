@@ -15,7 +15,7 @@ public class A로_B_만들기 {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		String before = st.nextToken();
 		String after = st.nextToken();
-		int answer = 0;
+		int answer = 1;
 		char[] ch = after.toCharArray();
 		for (int i = 0; i < before.length(); i++) {
 			for (int j = 0; j < ch.length; j++) {
@@ -27,17 +27,10 @@ public class A로_B_만들기 {
 		}
 		String result =  new String(ch);
 		System.out.println(result);
-		if(result.isBlank()) {
-			answer = 1;
-		}
+//		if(!result.isEmpty()) {
+//			answer = 0;
+//		}
 		System.out.println(answer);
-		
-		
-		//다른사람 풀이
-//		for(int i = 0; i < before.length(); i++){
-//            after = after.replaceFirst(before.substring(i,i+1),"");
-//        }
-//		after.length() == 0? 1: 0;
 	}
 
 }
