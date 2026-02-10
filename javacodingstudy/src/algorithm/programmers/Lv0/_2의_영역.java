@@ -7,6 +7,37 @@ public class _2의_영역 {
 
 	public static void main(String[] args) {
 		int[] arr = {1, 2, 1, 2, 1, 10, 2, 1};
+//		int[] arr = {1, 2, 1};
+//		int[] arr = {1,1,1};
+//		int[] arr = {1, 2, 1, 4, 5, 2, 9};
+		
+		
+		
+		//다른 사람 풀이 
+		int min = 100000, max = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 2) {
+                min = Math.min(min, i);
+                max = Math.max(max, i);
+            }
+        }
+		
+        int[] answer = Arrays.copyOfRange(arr, min, max+1);
+        
+        System.out.println(Arrays.toString(answer));
+		//실패
+//		String str = "";
+//		
+//		for(int i = 0; i < arr.length; i++) {
+//			str+=arr[i];
+//		}
+//		System.out.println(str.indexOf('2'));
+//
+//		System.out.println(str.lastIndexOf('2',str.length()));
+//		int[] answer = Arrays.copyOfRange(arr, str.indexOf('2'), str.lastIndexOf('2'));
+//		System.out.println(Arrays.toString(answer));
+		
+//		
 		//런타임 에러
 //		int start= -1;
 //		int end = -1;
