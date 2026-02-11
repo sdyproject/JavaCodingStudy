@@ -22,13 +22,9 @@ public class 문자열_밀기 {
 			if(A.equals(B)) {
 				break;
 			}
-//			char[] ch = A.toCharArray();
+			char[] ch = A.toCharArray();
 
-//			A = ch[ch.length-1] + A.substring(0, A.length()-1);
-			
-			
-			A = A.substring(A.length()-1) + A.substring(0, A.length()-1);
-
+			A = ch[ch.length-1] + A.substring(0, A.length()-1);
 			count++;
 			
 			

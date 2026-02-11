@@ -11,7 +11,7 @@ public class 연속된_수의_합 {
 	public static void main(String[] args) throws IOException{
 		
 		// 연속된 num개의 정수를 더해 total값 구하기 
-		// 해결 못함 다른 풀이 활용
+		// 해결 1시간 못함
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int num = Integer.parseInt(st.nextToken());
