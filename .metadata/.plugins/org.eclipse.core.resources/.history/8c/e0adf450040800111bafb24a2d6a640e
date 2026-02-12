@@ -1,0 +1,23 @@
+package algorithm.programmers.Lv0;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class 등수_매기기 {
+
+	public static void main(String[] args) {
+		int[][] score = {{80, 70},{90, 50},{40, 70},{50,80}};
+//		int[][] score = {{80,70},{70,80},{30,50},{90,100},{100,90},{100,100},{10,30}};
+		
+		int[] answer = {};
+		Map<Integer, Integer> map =  new TreeMap<>();
+		for (int i = 0; i < score.length; i++) {
+			
+			 int s= (score[i][0] + score[i][1]) / 2;
+			 map.put(s, i);
+//			 System.out.println(s);
+		}
+		System.out.println(map);
+	}
+
+}

@@ -1,0 +1,22 @@
+package algorithm.programmers.Lv0;
+
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class 문자열_묶기 {
+
+	public static void main(String[] args) {
+		String[] strArr = {"a","bc","d","efg","hi"};
+		
+		
+		Map<Integer, Integer> map =  new TreeMap<>();
+		for (int i = 0; i < strArr.length; i++) {
+			map.put(strArr[i].length(), map.getOrDefault(map, 1) +1);
+		}
+		System.out.println(map);
+
+		
+	}
+
+}

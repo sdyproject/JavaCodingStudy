@@ -7,41 +7,33 @@ import java.util.StringTokenizer;
 
 public class 문자열_밀기 {
 //해결못함
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		String A = st.nextToken();
 		String B = st.nextToken();
+		
 		int answer = 0;
-//		char[] ch = A.toCharArray();
 		int count = 0;
-		
-		
-		
+
 		for (int i = 0; i < A.length(); i++) {
-			if(A.equals(B)) {
+			if (A.equals(B)) {
 				break;
 			}
-//			char[] ch = A.toCharArray();
 
-//			A = ch[ch.length-1] + A.substring(0, A.length()-1);
-			
-			
-			A = A.substring(A.length()-1) + A.substring(0, A.length()-1);
+			A = A.substring(A.length() - 1) + A.substring(0, A.length() - 1);
 
 			count++;
-			
-			
+
 		}
-		if(count == A.length()) {
+		if (count == A.length()) {
 			answer = -1;
-		}else {
+		} else {
 			answer = count;
 		}
-		
-		
+
 		System.out.println(answer);
-		
+
 	}
 
 }

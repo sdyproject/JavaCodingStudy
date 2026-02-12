@@ -1,0 +1,36 @@
+package algorithm.programmers.Lv0;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
+public class 문자열_묶기 {
+
+	public static void main(String[] args) {
+		String[] strArr = {"a","bc","d","efg","hi"};
+		
+		ArrayList<Integer> list = new ArrayList<>();
+		for (int i = 0; i < strArr.length; i++) {
+			list.add(strArr[i].length());
+		}
+
+		System.out.println(list);
+		int answer = 0;
+		for (int i = 0; i < list.size(); i++) {
+			if(answer < list.get(i)) {
+				answer = list.get(i);
+			}
+			
+		}
+		System.out.println(answer);
+		
+		
+		Set<Integer> set = new HashSet<>();
+		for (int i = 0; i < strArr.length; i++) {
+			set.add(strArr[i].length());
+			
+		}
+		System.out.println(set);
+	}
+
+}
