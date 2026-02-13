@@ -45,7 +45,7 @@ public class queuestack {
 		
 		for (int i = 0; i < M; i++) {
 			q.addFirst(arr3[i]);
-			sb.append(q.pollLast()).append('\s');
+			sb.append(q.pollLast()).append('s');
 			
 		}
 		System.out.println(sb.toString());

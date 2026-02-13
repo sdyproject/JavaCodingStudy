@@ -34,6 +34,8 @@ public class _k의_개수 {
 				}
 		}
 		System.out.println(answer);
+
+
 	}
 
 }
