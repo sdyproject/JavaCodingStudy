@@ -10,7 +10,9 @@ public class 저주의_숫자_3 {
         int n = Integer.parseInt(br.readLine());
         int answer = 0;
 
+        for (int i = 1; i < n; i++) {
 
+        }
 
     }
 }
