@@ -14,19 +14,20 @@ public class 구슬을_나누는_경우의_수 {
 		
 		 balls = Integer.parseInt(st.nextToken());
 		 share = Integer.parseInt(st.nextToken());
+
 		 answer = 0;
 		arr =new int[share];
 		count(1,0);
 		System.out.println(answer);
-		
+
 	}
 	public static void count(int start, int depth) {
-		
+
 		if(depth == share) {
 			answer++;
 			return;
 		}
-		
+
 		for (int i = start; i <= balls; i++) {
 			arr[depth] = i;
 			count(i+1, depth+1);

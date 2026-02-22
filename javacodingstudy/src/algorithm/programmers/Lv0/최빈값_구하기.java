@@ -11,23 +11,12 @@ public class 최빈값_구하기 {
 //       int[] array = {1,2,3,4,3,3};
 //       int[] array = {1, 1, 2, 2};
 
-        int answer = 0;
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map  = new HashMap<>();
+
         for (int i = 0; i < array.length; i++) {
-              map.put(array[i], map.getOrDefault(array[i], 0)+1 );
+
         }
 
-        int max = 0;
-        for (Integer i : map.keySet()){
-            int val = map.get(i);
-            if(max < val){
-                max =  val;
-                answer = max;
-            }else if(max == val){
-                answer = -1;
-            }
-        }
-        System.out.println(answer);
 
     }
 }
