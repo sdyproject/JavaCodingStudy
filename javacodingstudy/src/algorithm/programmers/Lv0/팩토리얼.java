@@ -25,5 +25,8 @@ public class 팩토리얼 {
         }
 
         return num * factorial(num -1);
+
+
     }
+
 }
