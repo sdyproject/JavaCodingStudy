@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Queue;
 
 public class 공_던지기 {
@@ -12,11 +13,14 @@ public class 공_던지기 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		
-//		int[] number = {1, 2, 3, 4};
-        int[] number = {1, 2, 3, 4, 5, 6};
-//        int[] number = {1, 2, 3};
+//		int[] numbers = {1, 2, 3, 4};
+        int[] numbers = {1, 2, 3, 4, 5, 6};
+//      int[] numbers = {1, 2, 3};
 
 		int k =  Integer.parseInt(br.readLine());
+
+
+
 
 
 

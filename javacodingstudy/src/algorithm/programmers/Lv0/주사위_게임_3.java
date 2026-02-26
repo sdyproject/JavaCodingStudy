@@ -17,12 +17,15 @@ public class 주사위_게임_3 {
         int[] num = {a,b,c,d};
         Arrays.sort(num);
 
+
+
+        //  런타임 시간 초과였는데 테스트하니 성공 뭐지...
         if(num[0] == num[3]){
             answer = 1111*num[0];
         } else if(num[1] == num[3]){
             answer = (int) Math.pow(10*num[3]+num[0],2);
         } else if(num[0] == num[2]) {
-            answer = (int) Math.pow(10 * num[3] + num[0], 2);
+            answer = (int) Math.pow(10 * num[0] + num[3], 2);
         } else if (num[0] == num[1] && num[2] == num[3]) {
             answer = (num[0]+num[2]) * Math.abs(num[0] - num[2]);
         } else if (num[0] == num[1]) {
