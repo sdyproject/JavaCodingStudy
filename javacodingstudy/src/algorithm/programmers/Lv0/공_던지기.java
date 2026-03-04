@@ -15,7 +15,7 @@ public class 공_던지기 {
         int[] numbers = {1, 2, 3};
 
         int k = Integer.parseInt(br.readLine());
-        
+
 
     }
 

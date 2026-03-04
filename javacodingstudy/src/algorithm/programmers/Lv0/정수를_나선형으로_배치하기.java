@@ -12,10 +12,6 @@ public class 정수를_나선형으로_배치하기 {
 
         int[][] answer = new int[4][4];
 
-
-        for (int i = 0; i < answer.length; i++) {
-
-        }
     }
 
 }
