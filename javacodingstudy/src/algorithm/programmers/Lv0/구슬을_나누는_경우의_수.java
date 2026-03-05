@@ -6,32 +6,36 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class 구슬을_나누는_경우의_수 {
-	static int[] arr;
-	static int balls,share,answer;
-	public static void main(String[] args) throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		
-		 balls = Integer.parseInt(st.nextToken());
-		 share = Integer.parseInt(st.nextToken());
+    static int[] arr;
+    static int balls, share, answer;
 
-		 answer = 0;
-		arr =new int[share];
-		count(1,0);
-		System.out.println(answer);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int balls = Integer.parseInt(st.nextToken());
+        int share = Integer.parseInt(st.nextToken());
 
-	}
-	public static void count(int start, int depth) {
+        balls = Integer.parseInt(st.nextToken());
+        share = Integer.parseInt(st.nextToken());
 
-		if(depth == share) {
-			answer++;
-			return;
-		}
+        answer = 0;
+        arr = new int[share];
+        count(1, 0);
+        System.out.println(answer);
 
-		for (int i = start; i <= balls; i++) {
-			arr[depth] = i;
-			count(i+1, depth+1);
-		}
-	}
-	
+    }
+
+    public static void count(int start, int depth) {
+
+        if (depth == share) {
+            answer++;
+            return;
+        }
+
+        for (int i = start; i <= balls; i++) {
+            arr[depth] = i;
+            count(i + 1, depth + 1);
+        }
+    }
+
 }
