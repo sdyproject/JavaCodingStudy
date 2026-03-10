@@ -12,7 +12,7 @@ public class 종이_자르기 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int M = Integer.parseInt(st.nextToken());
         int N = Integer.parseInt(st.nextToken());
-        
+        System.out.println(M * N - 1);
 
     }
 }

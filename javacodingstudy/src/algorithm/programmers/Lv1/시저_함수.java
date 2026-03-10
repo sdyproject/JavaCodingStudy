@@ -1,51 +1,18 @@
 package algorithm.programmers.Lv1;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 public class 시저_함수 {
 
-	public static void main(String[] args) {
-//		String s = "AB"; 
-//		int n = 1;
-//		String s ="z";
-//		int n = 1;
-		String s ="a B z";
-		int n = 4;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        String s = st.nextToken();
+        int n = Integer.parseInt(st.nextToken());
 
-		
-        String answer = "";
-
-
-        
-        
-//        for(int  i = 0; i<s.length(); i++) {
-//        	char ch = s.charAt(i);
-//        	
-//        	if(ch==' ') {
-//        		answer+=ch;
-//        	}else {
-//        		
-//        	}
-//        }
-
-        	
-//      for(int  i = 0; i<s.length(); i++) {
-//    	char c = s.charAt(i);
-//    	int num = c+n;
-//    	
-//    	if(s.charAt(i)==' ') {
-//    		answer+=" ";
-//    	}else if(num> 'z') {
-//    		num-=26;
-//			answer+=Character.toString(num);
-//    	}else {
-//        	answer+= Character.toString(num);
-//
-//    	}
-//    	
-//    	
-//   
-//    }
-//    System.out.println(answer);
-        
-	}
+    }
 
 }
