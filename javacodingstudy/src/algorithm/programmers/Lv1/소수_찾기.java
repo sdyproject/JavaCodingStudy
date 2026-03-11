@@ -1,37 +1,28 @@
 package algorithm.programmers.Lv1;
 
-import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class 소수_찾기 {
 
-	public static void main(String[] args) {
-		int n = 10;
-//		int n = 5;
-		int answer = 0;
-		
-		boolean[] arr = new boolean[n+1];
-		
-		Arrays.fill(arr, 2,arr.length-1, true);
-		System.out.println(Arrays.toString(arr));
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        int answer = 0;
+        boolean[] arr = new boolean[n + 1];
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            for (int j = i * i; j < arr.length; j = j + i) {
+                arr[j] = true;
 
-		
-		for (int i = 2; i * i <= n; i++) {
-		    if (arr[i]) {
-		        for (int j = i * i; j <= n; j += i) {
-		            arr[j] = false;
-		        }
-		    }
-		}
-		System.out.println(Arrays.toString(arr));
-		
-		
-		
-		for(boolean b : arr) {
-			if(b==true) {
-				answer++;
-			}
-		}
-		System.out.println(answer);
-	}
+            }
+        }
 
+        for (int i = 2; i < arr.length; i++) {
+            if (!arr[i]) {
+                answer++;
+            }
+        }
+        System.out.println(answer);
+    }
 }
