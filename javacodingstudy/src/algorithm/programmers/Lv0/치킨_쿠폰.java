@@ -6,18 +6,13 @@ import java.io.InputStreamReader;
 
 public class 치킨_쿠폰 {
 
-	public static void main(String[] args)throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int chicken = Integer.parseInt(br.readLine());
-		int answer = 0;
-		
-		int coupon = chicken/10 + chicken%10;
-		while(coupon >= 1) {
-			answer += coupon;
-			coupon = coupon /10;
-		}
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int chicken = Integer.parseInt(br.readLine());
+        int answer = 0;
+        int coupon = chicken;
+        
 
-		System.out.println(answer);
-	}
+    }
 
 }

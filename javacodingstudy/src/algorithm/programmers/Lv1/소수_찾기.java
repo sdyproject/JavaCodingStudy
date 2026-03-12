@@ -14,7 +14,6 @@ public class 소수_찾기 {
         for (int i = 2; i <= Math.sqrt(n); i++) {
             for (int j = i * i; j < arr.length; j = j + i) {
                 arr[j] = true;
-
             }
         }
 
