@@ -11,7 +11,11 @@ public class 치킨_쿠폰 {
         int chicken = Integer.parseInt(br.readLine());
         int answer = 0;
         int coupon = chicken;
-        
+        while (coupon >= 10) {
+            answer += coupon / 10;
+            coupon = coupon / 10 + coupon % 10;
+        }
+        System.out.println(answer);
 
     }
 
