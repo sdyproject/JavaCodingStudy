@@ -1,53 +1,35 @@
 package algorithm.programmers.Lv1;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 public class 둘만의_암호 {
 
-	public static void main(String[] args) {
-		String s ="aukks";
-		String skip ="wbqd";
-		int index=5;
-		 String answer = "";
-		for(int i =0; i<s.length(); i++) {
-			char a =  s.charAt(i);
-			for(int j =0; j<index; j++) {
-				a++;
-				if (skip.contains(String.valueOf(a))) {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        String s = st.nextToken();
+        String skip = st.nextToken();
+        int index = Integer.parseInt(st.nextToken());
+
+        String answer = "";
+
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            for (int j = 0; j < index; j++) {
+                ch++;
+                if (ch > 'z') {
+                    ch -= 26;
+                }
+                if (skip.contains(String.valueOf(ch))) {
                     j--;
                 }
-				if(a>'z') {
-					a-=26;
-				}
-				
-				
-			}
-			answer+=a;
-		}
-		System.out.println(answer);
-//	
-//			for(int i =0; i<s.length(); i++) {
-//				 int a=Integer.valueOf(s.charAt(i));
-//
-//				for(int j =1; j<=index; j++) {
-//					a++;
-//					System.out.println(" a : "+(char) a);
-//
-//				}
-//
-//				
-//				for(int k = 0; k<skip.length(); k++) {
-//					int b=Integer.valueOf(skip.charAt(k));
-//					
-//					System.out.println(" b : "+(char) b);
-//				}
-//				
-//				
-//			
-//
-//			}
-			
-       
-			
-		
-	}
+            }
+            answer += ch;
+        }
+        System.out.println(answer);
+    }
 
 }

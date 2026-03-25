@@ -1,45 +1,31 @@
 package algorithm.programmers.Lv1;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class 문자열_나누기 {
-    // 해결 못함
-    public static void main(String[] args) {
-//		String s = "banana";
-        String s = "abracadabra";
-//		String s = "aaabbaccccabba";
-        int answer = 0;
 
-        int same = 0;
-        int different = 0;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s = br.readLine();
+        int answer = 1;
+        int count = 1;
+        int check = 0;
         char first = s.charAt(0);
-        for (int i = 0; i < s.length(); i++) {
 
-            if (same == 0) {
+        for (int i = 1; i < s.length(); i++) {
+            if (count == check) {
+                answer++;
                 first = s.charAt(i);
             }
 
             if (first == s.charAt(i)) {
-                same++;
+                count++;
             } else {
-                different++;
+                check++;
             }
-
-            if (same == different) {
-                answer++;
-                same = 0;
-                different = 0;
-            }
-
-
         }
-
-        // s 길이가 홀수 일때 남거나 짝이 맞지 않을때 나머지도 횟수 추가
-        if (same != 0 || different != 0) {
-            answer++;
-        }
-
         System.out.println(answer);
-
-
     }
-
 }
