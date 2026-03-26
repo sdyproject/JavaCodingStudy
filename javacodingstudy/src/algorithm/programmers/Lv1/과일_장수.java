@@ -4,27 +4,23 @@ import java.util.Arrays;
 
 public class 과일_장수 {
 
-	public static void main(String[] args) {
-		int k =3; int m=4; int[] score= {1, 2, 3, 1, 2, 3, 1};
-//		int k =4; int m=3; int[] score= {4, 1, 2, 2, 4, 4, 4, 4, 1, 2, 4, 2};
-		 int answer = 0;
-		 int n = score.length/m;
-		 int div = score.length % m;
-	Arrays.sort(score);
-	
-
-	if(score.length % m !=0) {
-		for(int i = 0; i < n; i++) {
-	        answer += (score[div + (i*m)]) * m * 1;
-	    }	
-	}else {
-		for(int i = 0; i < n; i++) {
-	        answer += (score[(i*m)]) * m * 1;
-	    }	
-	}
-    
-	
-    System.out.println(answer);
-	}
+    public static void main(String[] args) {
+        int k = 3;
+        int m = 4;
+        int[] score = {1, 2, 3, 1, 2, 3, 1};
+//        int k = 4;
+//        int m = 3;
+//        int[] score = {4, 1, 2, 2, 4, 4, 4, 4, 1, 2, 4, 2};
+        // 사과 상태에 따라 1부터 k 점
+        // k == 최상품 사과 1점 최하위점 사과
+        // 한상자에 사과를 m개 담는다
+        // 담긴 사과중 가장 낮은 점수 p(1 <= p <= k)인 경우 p * m 한상자 가격
+        int answer = 0;
+        Arrays.sort(score);
+        for (int i = score.length % m; i < score.length; i += m) {
+            answer += score[i];
+        }
+        System.out.println(answer * m);
+    }
 
 }
