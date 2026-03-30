@@ -6,13 +6,15 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class 숫자_짝꿍 {
-    //해결 실패
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         String x = st.nextToken();
         String y = st.nextToken();
 
+        StringBuilder sb = new StringBuilder();
+        
         //시간초과 실패
 
 //        String answer = "";

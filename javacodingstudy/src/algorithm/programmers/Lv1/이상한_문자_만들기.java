@@ -4,16 +4,23 @@ public class 이상한_문자_만들기 {
 
     public static void main(String[] args) {
 //		String s = " disappeared aPpEaReD ";
-//		String s = " try hello world ";
-        String s = " read the explanation carefully  ";
+        String s = " try hello world ";
+//        String s = " read the explanation carefully  ";
+//        String s = "try hello world";
         StringBuilder sb = new StringBuilder();
         int index = 0;
         for (char ch : s.toCharArray()) {
 
             if (ch == ' ') {
                 sb.append(ch);
+                index = 0;
             } else {
-
+                if (index % 2 == 0) {
+                    sb.append(Character.toUpperCase(ch));
+                } else {
+                    sb.append(Character.toLowerCase(ch));
+                }
+                index++;
             }
         }
         System.out.println(sb.toString());
