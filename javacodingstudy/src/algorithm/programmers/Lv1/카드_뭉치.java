@@ -10,5 +10,6 @@ public class 카드_뭉치 {
 //        String[] cards2 = {"want", "to"};
 //        String[] goal = {"i", "want", "to", "drink", "water"};
 
+
     }
 }
