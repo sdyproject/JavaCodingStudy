@@ -11,35 +11,16 @@ public class 예산 {
 //        int[] d = {2, 2, 3, 3};
 //        int budget = 10;
         int answer = 0;
+        int count = 0;
         Arrays.sort(d);
-        end:
         for (int i = 0; i < d.length; i++) {
-            int sum = 0;
-            int count = 0;
-            for (int j = i; j < d.length; j++) {
-                sum += d[j];
-                count++;
-                if (sum > budget) {
-                    break;
-                } else if (sum == budget) {
-                    answer = count;
-                    break end;
-                }
+            count += d[i];
+            if (count > budget) {
+                break;
             }
+            answer++;
         }
         System.out.println(answer);
-// 다른 풀이
-//        int answer = 0;
-//        int count = 0;
-//        Arrays.sort(d);
-//        for (int i = 0; i < d.length; i++) {
-//            count += d[i];
-//            if (count > budget) {
-//                break;
-//            }
-//            answer++;
-//        }
-//        System.out.println(answer);
 
     }
 }
