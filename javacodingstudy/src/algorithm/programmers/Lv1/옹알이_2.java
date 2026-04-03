@@ -1,45 +1,23 @@
 package algorithm.programmers.Lv1;
 
-import java.util.Arrays;
-
 public class 옹알이_2 {
 
-	public static void main(String[] args) {
-		 int answer = 0;
-		 //해결못함
-		 // 
-//		String[] babbling = {"aya", "yee", "u", "maa"};
-		String[] babbling = {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"};
-		String [] baby_word = {"aya", "ye", "ma", "woo"};
-		
-		//조카 단어
-		// "aya", "ye", "woo", "ma"
-		
-		
-		for(int i =0; i<baby_word.length; i++) {
-			for(int j =0; j<babbling.length; j++) {
-				if(babbling[j].contains(baby_word[i])) {
-					String str = babbling[j].substring(baby_word[i].length());
-					
-					if(str.contains(baby_word[i])) {
-						babbling[j] = " ";
-					}else {
-						babbling[j] = str;
-					}
-				}
-			}
-		}
-			
-		for(String s : babbling) {
-			if (s.isEmpty()) {
-		        answer++;
-		    }
-		}
-		
-		System.out.println(Arrays.toString(babbling));
-		
-		System.out.println(answer);
-			
-	}
+    public static void main(String[] args) {
+
+
+//        String[] babbling = {"aya", "yee", "u", "maa"};
+//        String[] babbling = {"ayayeaya", "woomawooma"};
+
+        String[] babbling = {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"};
+        int answer = 0;
+
+        for (String s : babbling) {
+            s = s.replaceAll("ayaaya|yeye|woowoo|mama", " ");
+            s = s.replaceAll("aya|ye|woo|ma", "");
+            if (s.isEmpty()) answer++;
+        }
+        System.out.println(answer);
+
+    }
 
 }
