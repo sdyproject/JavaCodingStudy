@@ -3,7 +3,7 @@ package algorithm.programmers.Lv1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class 숫자_짝꿍 {
 
@@ -12,9 +12,39 @@ public class 숫자_짝꿍 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         String x = st.nextToken();
         String y = st.nextToken();
-
+        List<String> list = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
-        
+        Map<String, Integer> xmap = new TreeMap<>();
+        Map<String, Integer> ymap = new TreeMap<>();
+        for (String str : x.split("")) {
+            xmap.put(str, xmap.getOrDefault(str, 0) + 1);
+        }
+
+        for (String str : y.split("")) {
+            ymap.put(str, ymap.getOrDefault(str, 0) + 1);
+        }
+        for (String key : xmap.keySet()) {
+            if (ymap.containsKey(key)) {
+                int count = Math.min(xmap.get(key), ymap.get(key));
+                for (int i = 0; i < count; i++) {
+                    list.add(key);
+                }
+            }
+
+        }
+        if (list.isEmpty()) {
+            sb.append("-1");
+        } else {
+            Collections.sort(list, Collections.reverseOrder());
+            if (list.get(0).equals("0")) {
+                sb.append("0");
+            } else {
+                sb.append(String.join("", list));
+            }
+        }
+
+        System.out.println(sb);
+
         //시간초과 실패
 
 //        String answer = "";

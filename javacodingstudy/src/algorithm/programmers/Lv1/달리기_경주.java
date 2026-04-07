@@ -1,15 +1,12 @@
 package algorithm.programmers.Lv1;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 public class 달리기_경주 {
 
-	public static void main(String[] args) {
-		String[] players = {"mumu", "soe", "poe", "kai", "mine"};
-		String[] callings = {"kai", "kai", "mine", "mine"};
-		
+    public static void main(String[] args) {
+        String[] players = {"mumu", "soe", "poe", "kai", "mine"};
+        String[] callings = {"kai", "kai", "mine", "mine"};
+
+
 // 시간 초과
 //		for(String str : callings) {
 //			for(int i =1; i<players.length; i++) {
@@ -22,29 +19,29 @@ public class 달리기_경주 {
 //		}
 //		
 //		System.out.println(Arrays.toString(players));
-	
-		 String[] answer = players;
-	Map<String, Integer> map = new HashMap<>();
-	
-	for(int i = 0; i<players.length; i++) {
-		map.put(players[i], i);
-	} 
-	
-	for(String str : callings) {
-				int rank = map.get(str);
-				String name = players[rank-1];
-//				System.out.println("name"+name);
-				
-				 answer[rank-1] = str;
-				 answer[rank] = name;
-		            map.put(str,rank-1);
-		            map.put(name,rank);
-				
-//		System.out.println(map.get(str));
-	}
-	System.out.println(Arrays.toString(answer));
-	
-	
-	}
+
+//        String[] answer = players;
+//        Map<String, Integer> map = new HashMap<>();
+//
+//        for (int i = 0; i < players.length; i++) {
+//            map.put(players[i], i);
+//        }
+//
+//        for (String str : callings) {
+//            int rank = map.get(str);
+//            String name = players[rank - 1];
+////				System.out.println("name"+name);
+//
+//            answer[rank - 1] = str;
+//            answer[rank] = name;
+//            map.put(str, rank - 1);
+//            map.put(name, rank);
+//
+////		System.out.println(map.get(str));
+//        }
+//        System.out.println(Arrays.toString(answer));
+
+
+    }
 
 }
