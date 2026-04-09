@@ -4,4 +4,5 @@
 
 백준 코딩테스트 학습 출처: https://www.acmicpc.net
 
+블로그 정리 : https://seodongikblog.tistory.com
 
