@@ -6,9 +6,11 @@ public class 공원_산책 {
 
     public static void main(String[] args) {
 
-        String[] park = {"SOO", "OOO", "OOO"};
-        String[] routes = {"E 2", "S 2", "W 1"};
+//        String[] park = {"SOO", "OOO", "OOO"};
+//        String[] routes = {"E 2", "S 2", "W 1"};
 
+        String[] park = {"SOO", "OXX", "OOO"};
+        String[] routes = {"E 2", "S 2", "W 1"};
 
         int startx = 0;
         int starty = 0;
@@ -26,27 +28,7 @@ public class 공원_산책 {
             String way = routes[i].split(" ")[0];
             int step = Integer.valueOf(routes[i].split(" ")[1]);
 
-            for (int j = 0; j < step; j++) {
-                if (way.equals("E")) {
-                    starty++;
-                } else if (way.equals("W")) {
-                    starty--;
-                } else if (way.equals("S")) {
-                    startx++;
-                } else {
-                    startx--;
-                }
-
-                if (startx < ch.length && starty < ch[0].length) {
-                    if (ch[startx][starty] == 'X') {
-                        break;
-                    }
-
-                }
-            }
 
         }
-        System.out.println(startx);
-        System.out.println(starty);
     }
 }
