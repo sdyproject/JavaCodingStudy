@@ -1,22 +1,14 @@
 package algorithm.backjoon.정렬;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
 
 public class 좌표_압축 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int N =  sc.nextInt();
-		
-		//시간 초과
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
+        //시간 초과
 //		List<Integer> list = new ArrayList<>();
 //		int[] arr = new int[N];
 //		for (int i = 0; i < N; i++) {
@@ -37,30 +29,32 @@ public class 좌표_압축 {
 //		for (int i = 0; i < arr.length; i++) {
 //			System.out.print(arr[i]+ " ");
 //		}
-		
-		
-		int[] arr = new int[N];
-		Set<Integer> set = new HashSet<>();
-		
-		for (int i = 0; i < N; i++) {
-			arr[i] = sc.nextInt();
-			set.add(arr[i]);
-		}
-		List<Integer> list = new ArrayList<>(set);
-		Collections.sort(list);
-		
-		Map<Integer, Integer> map = new HashMap<>();
-		for (int i = 0; i < list.size(); i++) {
-			map.put(list.get(i),i);
-		}
-		System.out.println(map);
- 		
-		StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < N; i++) {
-            sb.append(map.get(arr[i])).append(' ');
-        }
 
-        System.out.println(sb.toString());
-	}
+        //이전 풀이
+//		int[] arr = new int[N];
+//		Set<Integer> set = new HashSet<>();
+//
+//		for (int i = 0; i < N; i++) {
+//			arr[i] = sc.nextInt();
+//			set.add(arr[i]);
+//		}
+//		List<Integer> list = new ArrayList<>(set);
+//		Collections.sort(list);
+//
+//		Map<Integer, Integer> map = new HashMap<>();
+//		for (int i = 0; i < list.size(); i++) {
+//			map.put(list.get(i),i);
+//		}
+//		System.out.println(map);
+//
+//		StringBuilder sb = new StringBuilder();
+//        for (int i = 0; i < N; i++) {
+//            sb.append(map.get(arr[i])).append(' ');
+//        }
+//
+//        System.out.println(sb.toString());
+
+
+    }
 
 }
