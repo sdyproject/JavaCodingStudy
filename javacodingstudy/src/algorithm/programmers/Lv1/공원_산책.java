@@ -1,5 +1,7 @@
 package algorithm.programmers.Lv1;
 
+import java.util.Arrays;
+
 public class 공원_산책 {
 
     public static void main(String[] args) {
@@ -7,63 +9,57 @@ public class 공원_산책 {
 //        String[] park = {"SOO", "OOO", "OOO"};
 //        String[] routes = {"E 2", "S 2", "W 1"};
 
-//        String[] park = {"SOO", "OXX", "OOO"};
-//        String[] routes = {"E 2", "S 2", "W 1"};
+        String[] park = {"SOO", "OXX", "OOO"};
+        String[] routes = {"E 2", "S 2", "W 1"};
 
-        String[] park = {"OSO", "OOO", "OXO", "OOO"};
-        String[] routes = {"E 2", "S 3", "W 1"};
+//        String[] park = {"OSO", "OOO", "OXO", "OOO"};
+//        String[] routes = {"E 2", "S 3", "W 1"};
         int[] answer = new int[2];
         char[][] ch = new char[park.length][park[0].length()];
-        int startx = 0;
-        int starty = 0;
+        int startw = 0;
+        int starth = 0;
         for (int i = 0; i < park.length; i++) {
             ch[i] = park[i].toCharArray();
             if (park[i].contains("S")) {
-                startx = i;
-                starty = park[i].indexOf("S");
+                startw = park[i].indexOf("S");
+                starth = i;
             }
         }
-        System.out.println(startx);
-        System.out.println(starty);
-        System.out.println();
+        System.out.println(Arrays.deepToString(ch));
+        System.out.println(starth);
+        System.out.println(startw);
 
         for (int i = 0; i < routes.length; i++) {
             String way = routes[i].split(" ")[0];
             int step = Integer.valueOf(routes[i].split(" ")[1]);
+            int w = startw;
+            int h = starth;
 
-            int x = startx;
-            int y = starty;
             for (int j = 0; j < step; j++) {
                 if (way.equals("E")) {
-                    y++;
+                    w++;
                 } else if (way.equals("W")) {
-                    y--;
+                    w--;
                 } else if (way.equals("N")) {
-                    x--;
+                    h--;
                 } else {
-                    x++;
+                    h++;
                 }
 
-                if (x < park.length && y < park[0].length() && x >= 0 && y >= 0) {
-
-                    if (ch[x][y] == 'X') {
+                if (w < park[0].length() && h < park.length && w >= 0 && h >= 0) {
+                    if (ch[h][w] == 'X') {
                         break;
                     }
-                    if (i == step - 1) {
-                        startx = x;
-                        starty = y;
+                    if (j == step - 1) {
+                        startw = w;
+                        starth = h;
                     }
-
-
                 }
-
-
             }
-
-
         }
-        System.out.println(startx);
-        System.out.println(starty);
+        System.out.println(starth);
+        System.out.println(startw);
+
 
     }
 }
