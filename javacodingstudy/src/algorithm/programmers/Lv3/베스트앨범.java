@@ -16,7 +16,9 @@ public class 베스트앨범 {
 
         Map<String, Integer> count = new HashMap<>();
         Map<String, Map<Integer, Integer>> song = new HashMap<>();
-        
 
+        for (int i = 0; i < genres.length; i++) {
+            
+        }
     }
 }
