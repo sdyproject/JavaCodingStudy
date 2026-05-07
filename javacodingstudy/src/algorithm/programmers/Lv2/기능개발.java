@@ -17,22 +17,22 @@ public class 기능개발 {
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < progresses.length; i++) {
             if ((100 - progresses[i]) % speeds[i] == 0) {
-                queue.offer((100 - progresses[i]) / speeds[i]);
+                queue.add((100 - progresses[i]) / speeds[i]);
             } else {
-                queue.offer((100 - progresses[i]) / speeds[i] + 1);
+                queue.add((100 - progresses[i]) / speeds[i] + 1);
             }
         }
-        int frist = queue.poll();
+        int first = queue.poll();
         int count = 1;
 
         while (!queue.isEmpty()) {
-            if (frist >= queue.peek()) {
+            if (first >= queue.peek()) {
                 count++;
                 queue.poll();
             } else {
                 list.add(count);
                 count = 1;
-                frist = queue.poll();
+                first = queue.poll();
             }
         }
         list.add(count);
