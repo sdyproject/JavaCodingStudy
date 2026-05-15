@@ -13,8 +13,9 @@ public class 가장_큰_수 {
         Arrays.sort(arr, ((o1, o2) -> (o2 + o1).compareTo(o1 + o2)));
 
         if (arr[0].equals("0")) {
-
+            System.out.println("0");
         }
 
+        System.out.println(String.join("", arr));
     }
 }
