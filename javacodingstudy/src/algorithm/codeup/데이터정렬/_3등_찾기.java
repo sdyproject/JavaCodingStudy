@@ -14,6 +14,7 @@ public class _3등_찾기 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int count = Integer.parseInt(br.readLine());
 
+
         Map<Integer, String> map = new TreeMap<>(Collections.reverseOrder());
         for (int i = 0; i < count; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
